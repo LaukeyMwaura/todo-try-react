@@ -8,4 +8,9 @@
     body  {
         background-color: yellowgreen;
     }
+    .column {
+        width: 220px;
+        float: left;
+        padding: 15px;
+    }
 }
