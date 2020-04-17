@@ -1,0 +1,7 @@
+[2020-02-11 13:09:20.393] [renderer1] [error] Error: Unable to read file (Error: File not found (/home/victor/Documents/Week2MPFT26/Mon/yolomy/index.html))
+    at Object.t.createErrorWithActions (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:58:379)
+    at w.handleSetInputError (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4837:647)
+    at w.handleSetInputError (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4840:376)
+    at w.setInput (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4837:358)
+[2020-02-11 13:09:23.365] [renderer1] [error] net::ERR_INTERNET_DISCONNECTED: Error: net::ERR_INTERNET_DISCONNECTED
+[2020-02-11 13:09:25.814] [renderer1] [warning] UNRESPONSIVE extension host, 'ritwickdey.LiveServer' took 96% of 100.847ms, saved PROFILE here: '/tmp/exthost-f1e258.cpuprofile' [{"id":"program","total":2151,"percentage":2},{"id":"ritwickdey.LiveServer","total":97286,"percentage":96},{"id":"self","total":1228,"percentage":1}]

@@ -1,0 +1,9 @@
+2020/02/11-12:53:36.779 787 Reusing MANIFEST /home/victor/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2020/02/11-12:53:36.779 787 Recovering log #132
+2020/02/11-12:53:37.719 787 Reusing old log /home/victor/.config/google-chrome/Default/Sync Data/LevelDB/000132.log 
+2020/02/11-12:54:00.114 8e2 Level-0 table #137: started
+2020/02/11-12:54:00.636 8e2 Level-0 table #137: 107460 bytes OK
+2020/02/11-12:54:01.579 8e2 Delete type=0 #132
+2020/02/11-13:57:49.104 8e2 Level-0 table #139: started
+2020/02/11-13:57:49.268 8e2 Level-0 table #139: 91183 bytes OK
+2020/02/11-13:57:49.319 8e2 Delete type=0 #136

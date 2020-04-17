@@ -1,0 +1,807 @@
+(function(){
+	/*having this here as the search should not get hidded after dom.ready - which causes a flicker*/
+	var pageIdentifier = $('#pageIdentifier').val().toLowerCase();
+	switch(pageIdentifier){
+	case "disputeform":
+	case "pfinderresults":
+	case "changeproductpfinderresults":
+		/*Grouping "Hiding search on mobile"*/
+		//hide search toggle
+		$('#mobNavTrigSearch').addClass('hide');
+		break;
+	}
+})();
+	
+	if(window.location.href.indexOf("/contact-hp/product/") > -1 && window.location.href.indexOf("create-case") === -1){
+		 $("#modalPageLevelSpinner").modal("show");
+	}
+	
+	
+
+	
+
+	//6550: start Here
+	var ajaxUrl="/hp-pps-services/webcontent/secondarynavigation/country/" + getCCLC("cc") + "/language/" + getCCLC("lc");
+	//6713 start: change it to 775px
+	var sec_nav_width=775;
+	//6711 end
+	var sec_nav_cont=".mobile-nav-wrapper .container";
+	var sec_nav_menu, sec_nav_dd_menu, sec_nav_dd_triggger;
+
+	//Get sec navigation menu
+	$.ajax({
+		url: ajaxUrl,
+		/*3209 start: add header to accept xml response and locale characters*/
+		headers: {accept: 'application/xml;charset=UTF-8'},
+		//d-uat-529: replace special character
+		dataFilter: function(data){
+			if(typeof data == "string"){
+				return data.replace(/&/g,'&amp;');
+			}
+			return data;
+		},
+		success: function(response, textStatus, request){
+			//this is not required to extract html from xml response
+			//var data=getHtmlResponseFromXML(response);
+
+			//insert response into plcaeholder
+			// request.responseText = '<ul><li><a href="//uat.support.hp.com/us-en" >Support Home</a></li><li><a href="//uat.support.hp.com/us-en/products" >Products</a></li><li><a href="//uat.support.hp.com/us-en/drivers" >Software and Drivers</a></li><li><a href="http://h30434.www3.hp.com/" target="_blank" >Forums</a></li><li> <a >Business Support</a><ul><li><a href="https://mycrmstage.support.hp.com/en-US/create-case/" class="login-required adx-nav-url first-level">Create a new case</a></li><li><a href="https://mycrmstage.support.hp.com/en-US/?vuc=1" class="login-required adx-nav-url first-level">Find an existing case</a></li><li><a href="https://mycrmstage.support.hp.com/en-US/contract-warranties/" class="login-required first-level">Manage contracts and warranties</a></li><li><a href="https://mycrm.support.hp.com/en-US/signup/" target="_blank" class="first-level">Register individual account</a></li><li><a href="https://support.hp.com/gb-en/document/c05445013" target="_blank" class="first-level">Registration help</a></li><li><a class="login-reqd-message">Login required</a></li></ul></li><li><a href="//uat.support.hp.com/us-en/contact-hp" data-hub-pagetype="s-017">Contact Support</a></li><li> <a >Business Support</a><ul><li><a href="https://mycrmstage.support.hp.com/en-US/create-case/" class="login-required adx-nav-url first-level">Create a new case</a></li><li><a href="https://mycrmstage.support.hp.com/en-US/?vuc=1" class="login-required adx-nav-url first-level">Find an existing case</a></li><li><a href="https://mycrmstage.support.hp.com/en-US/contract-warranties/" class="login-required first-level">Manage contracts and warranties</a></li><li><a href="https://mycrm.support.hp.com/en-US/signup/" target="_blank" class="first-level">Register individual account</a></li><li><a href="https://support.hp.com/gb-en/document/c05445013" target="_blank" class="first-level">Registration help</a></li><li><a class="login-reqd-message">Login required</a></li></ul></li></ul>';
+			$(sec_nav_cont).empty().html(request.responseText);
+			/*3209 end*/
+
+			// sec_nav_menu=sec_nav_cont+" > ul > li:last-child";
+			sec_nav_dd_menu=$(sec_nav_cont+"> ul > li > ul");
+			sec_nav_dd_triggger=$(sec_nav_dd_menu).siblings("a");
+
+			sec_nav_dd_triggger.attr("aria-expanded","false");
+			//insert down arrow
+			/*6711 start*/
+			if($(window).width() <= sec_nav_width){
+				sec_nav_dd_triggger.append(' <span class="icon-dwn pull-right"></span>');
+			}
+			else{
+				sec_nav_dd_triggger.append(' <span class="icon-dwn secnav-dropdown-carrot"></span>');
+			}
+			/*6711 end*/
+
+			//3210 start: add active class on current page tab
+			highlightCurrentPageTab(sec_nav_cont);
+			//3210 end
+
+			//6713 start
+			if($(window).width() <= sec_nav_width){
+				setSecNavDropdownMaxHeight();
+
+				//3557: add placement of carrot on rtl
+				$(".customDropdown > a.dropdown-toggle.hidden-lg > span").addClass("secNavToggleCarrot");
+			}
+			//6713 end
+
+			$('[data-hub-pagetype="s-017"]').attr('href', contactHpLocaleContext.value);
+
+			//Show dropdown on click
+			sec_nav_dd_menu.parents("li").on("click", function(){
+				if($(window).width() <= sec_nav_width){
+
+					if($(this).children("ul").is(":visible") == true){
+
+						// sec_nav_dd_menu.hide();
+						$(this).children("ul").hide();
+						sec_nav_dd_triggger.addClass("sec-nav-mv").removeClass("sec-nav-mv-open sec-nav-dv").find("span").addClass("icon-dwn").removeClass("icon-up");
+						$(this).css("background-color","#fff");
+					}
+					else{
+						// sec_nav_dd_menu.show();
+						$(this).children("ul").show();
+						sec_nav_dd_triggger.addClass("sec-nav-mv-open").removeClass("sec-nav-mv sec-nav-dv").find("span").addClass("icon-up").removeClass("icon-dwn");
+					}
+				}
+				else{
+					sec_nav_dd_triggger.addClass("sec-nav-dv").removeClass("sec-nav-mv-open sec-nav-mv");
+				}
+			});
+
+			//restore initial styling on window resize
+			$(window).resize(function(){
+				sec_nav_dd_menu.hide();
+
+				$(sec_nav_cont + "> ul > li > ul").siblings("a").children("span").addClass("icon-dwn").removeClass("icon-up");
+				if($(window).width() <= sec_nav_width){
+					setSecNavDropdownMaxHeight();
+					/*6711 start*/
+					$(sec_nav_cont + "> ul > li > ul").siblings("a").children("span").addClass("pull-right").removeClass("secnav-dropdown-carrot");
+					/*6711 end*/
+					sec_nav_dd_triggger.addClass("sec-nav-mv").removeClass("sec-nav-dv sec-nav-mv-open");
+
+					//3557: add placement of carrot on rtl
+					$(".customDropdown > a.dropdown-toggle.hidden-lg > span").addClass("secNavToggleCarrot");
+				}
+				else{
+					/*6711 start*/
+					$(sec_nav_cont + "> ul > li > ul").siblings("a").children("span").removeClass("pull-right").addClass("secnav-dropdown-carrot");
+					/*6711 end*/
+					sec_nav_dd_triggger.addClass("sec-nav-dv").removeClass("sec-nav-mv sec-nav-mv-open");
+
+					//3557: remove placement of carrot on rtl
+					$(".customDropdown > a.dropdown-toggle.hidden-lg > span").removeClass("secNavToggleCarrot");
+				}
+			});
+
+			//Show dropdown on mouse hover
+			$(sec_nav_cont+"> ul > li > ul").parents("li").on("mouseenter",function(){
+
+				/*3299 start: change carrot icon*/
+				$(this).children("ul").siblings("a").children("span").addClass("icon-up").removeClass("icon-dwn");
+				$(this).children("ul").siblings("a").attr("aria-expanded","true");
+				/*3299 end */
+				// sec_nav_dd_menu.show();
+				$(this).children("ul").show();
+			});
+			$(sec_nav_cont+"> ul > li > ul").parents("li").on("mouseleave",function(){
+				/*3299 start: change carrot icon*/
+				$(this).children("ul").siblings("a").children("span").removeClass("icon-up").addClass("icon-dwn");
+				$(this).children("ul").siblings("a").attr("aria-expanded","false");
+				/*3299 end */
+				// sec_nav_dd_menu.hide();
+				$(this).children("ul").hide();
+			});
+
+			/*3226 start*/
+			var nav=$(sec_nav_cont + " > ul");
+
+			// Add ARIA role to menubar and menu items
+			nav.attr('role', 'menubar').find('> li').attr('role', 'menuitem').find("> a");
+
+			//select top level elements
+			var top_level_links = nav.find('> li > a');
+			var subMenuLinks = top_level_links.siblings("ul").children("li").children("a");
+
+			//add aria attributes so that submenu cannot access without open of dropdown
+			$(top_level_links).next('ul')
+				.attr({ 'aria-hidden': 'true', 'role': 'menu' });
+
+			//3659: add role="menuitem" on dropdown trigger element to open Dropdown when using HVDA
+			$(subMenuLinks).attr({"role": "menuitem", "aria-haspopup": true});
+			nav.find("> li > ul li a").attr("role", "menuitem");
+
+			// Bind arrow keys for navigation
+			$(top_level_links).keydown(function(e){
+				var elem = $(this).siblings("ul");
+				var that = $(this);
+				//Esc Key
+				if(e.keyCode == 27) {
+					if(elem.length > 0) {
+						if($(this).siblings("ul").is(":visible")){
+							elem.siblings("a").attr("aria-expanded","false");
+							hideDropdownAccessibility(elem);
+							elem.siblings("a").children("span").removeClass("icon-up").addClass("icon-dwn");
+						}
+					}
+				}
+
+				//Enter or Space key
+				if(e.keyCode == 13 || e.keyCode == 32) {
+					if(elem.length > 0) {
+						// if(e.keyCode == 32){
+							e.preventDefault();
+						// }
+						if(!$(this).siblings("ul").is(":visible")){
+							// hideDropdownAccessibility(elem);
+							showDropdownAccessibility(elem);
+							$($(this).siblings("ul").children("li")[0]).children("a").first().prev().focus();
+							if($(this).children("span").hasClass("icon-up")){
+								$(this).children("span").removeClass("icon-up").addClass("icon-dwn");
+								elem.siblings("a").attr("aria-expanded","false");
+							}
+							else{
+								$(this).children("span").addClass("icon-up").removeClass("icon-dwn");
+								elem.siblings("a").attr("aria-expanded","true");
+							}
+						}
+						else{
+							elem.siblings("a").attr("aria-expanded","false");
+							hideDropdownAccessibility(elem);
+							elem.siblings("a").children("span").removeClass("icon-up").addClass("icon-dwn");
+						}
+					}
+				}
+
+				// tab key
+				// if(e.keyCode == 9 && !e.shiftKey) {
+				// 	if(elem.length > 0) {
+				// 		if(!$(this).siblings("ul").is(":visible")){
+				// 			// hideDropdownAccessibility(elem);
+				// 			showDropdownAccessibility(elem);
+				// 			$($(this).siblings("ul").children("li")[0]).children("a").first().prev().focus();
+				// 			if($(this).children("span").hasClass("icon-up")){
+				// 				$(this).children("span").removeClass("icon-up").addClass("icon-dwn");
+				// 			}
+				// 			else{
+				// 				$(this).children("span").addClass("icon-up").removeClass("icon-dwn");
+				// 			}
+				// 		}
+				// 	}
+				// }
+
+				// //3619: shift+tab click
+				// else if(e.keyCode == 9 && e.shiftKey && $(this).parent('li').prev('li').length > 0) {
+				// 	// elem=nav.find('> li > ul');
+				// 	if(elem.length > 0) {
+				// 		e.preventDefault();
+				// 		hideDropdownAccessibility(elem);
+				// 	}
+
+				// 	// Get focus on prev element
+				// 	$(this).parent('li').prev('li').find('a').first().focus();
+				// 	//change carrot
+				// 	$(this).children("span").removeClass("icon-up").addClass("icon-dwn");
+				// }
+			});
+
+			subMenuLinks.keydown(function(e){
+				//Esc Key
+				if(e.keyCode == 27) {
+					elem=$(this).parent("li").parent("ul");
+					if(elem.length > 0) {
+						elem.siblings("a").attr("aria-expanded","false");
+						hideDropdownAccessibility(elem);
+						elem.siblings("a").children("span").removeClass("icon-up").addClass("icon-dwn");
+						elem.siblings("a").focus();
+					}
+				}
+
+				if(e.keyCode == 9 && !e.shiftKey) {
+					elem=$(this).parent("li").parent("ul");
+					// if($(document.activeElement).text() === elem.children("li:last-child").text()){
+					if(Object.is(document.activeElement,(elem.children("li:last-child").find("a")[0]))){
+						elem.siblings("a").attr("aria-expanded","false");
+						hideDropdownAccessibility(elem);
+						elem.siblings("a").children("span").removeClass("icon-up").addClass("icon-dwn");
+					}
+				}
+
+				else if(e.keyCode == 9 && e.shiftKey) {
+					elem=$(this).parent("li").parent("ul");
+					// if($(.activeElement).text() === elem.children("li:first-child").text()){
+					if(Object.is(document.activeElement,(elem.children("li:first-child").find("a")[0]))){
+						elem.siblings("a").attr("aria-expanded","false");
+						hideDropdownAccessibility(elem);
+						elem.siblings("a").children("span").removeClass("icon-up").addClass("icon-dwn");
+					}
+				}
+			});
+			/*3226 end*/
+
+			/*3459 start: show border on active tab on tab access*/
+			var currentActiveSecNavTab=$(".mobile-nav-wrapper .container > ul > li.active").index();
+			$(document).on("focus", ".mobile-nav-wrapper .container > ul > li > a", function(){
+				$(this).parents("ul").find("> li").removeClass("active");
+				$(this).parent().addClass("active");
+			});
+			/*3459 end*/
+
+			//show border on current active tab if click outside sec nav
+			$("body").on("click",function(e){
+				if(!$(e.target).is(sec_nav_cont)){
+					$(sec_nav_cont + " > ul > li > ul").hide();
+					$(sec_nav_cont + " > ul > li").removeClass("active");
+					$(sec_nav_cont + "> ul > li > ul").siblings("a").children("span").addClass("icon-dwn").removeClass("icon-up");
+					if(currentActiveSecNavTab >= 0 && currentActiveSecNavTab != undefined){
+						$(sec_nav_cont + " > ul > li").eq(currentActiveSecNavTab).addClass("active");
+					}
+				}
+			});
+
+			//add href to all links to provide accessibility
+			$.each($(sec_nav_cont + " > ul li a"), function(i,v){
+				if($(this).attr("href")===undefined || $(this).attr("href") == false){
+					$(this).attr("href","javascript:void(0)");
+				}
+			});
+
+			//d-UAT-13: fix white bottom border on sec nav for mac
+			if(navigator.userAgent.indexOf('Mac') >= 0 || navigator.platform === 'MacIntel'){
+				//$("html[dir=ltr] " + sec_nav_cont + " > ul > li").css("margin-top", "14px");
+			}
+
+			//don't focus on headings in dropdown links
+			var dd_links=" > ul > li > ul > li > a";
+			$.each($(sec_nav_cont + dd_links), function(index,element){
+				var linkVal=$(element).attr("href");
+				if(linkVal == undefined || linkVal == "javascript:void(0)"){
+					$(element).removeAttr("href");
+				}
+			});
+
+			//change default cursor on heading
+			$(sec_nav_cont + dd_links).mouseover(function(){
+				var linkVal=$(this).attr("href");
+				if(linkVal == undefined || linkVal == "javascript:void(0)"){
+					$(this).css("cursor", "default");
+				}
+			});
+
+			// append serial number to my business support navigation
+			appendSessionDataToAdxEndpoints();
+		},
+		error: function(response, textStatus, request){
+			console.log("error sec nav ajax call");
+			if(!request.statusText =="abort") {
+				//d-reg-22: redirect to 404/500 when PPS service is down or any error
+				var currentUrlPath=window.location.href;
+				if(currentUrlPath.indexOf("errorType=404") == -1 && currentUrlPath.indexOf("errorType=500") == -1){
+					window.location.href = "/" + getCCLC("cc") + "-" + getCCLC("lc") + "/error?errorType=" + response.status;
+				}
+			}
+
+		}
+	});
+
+	//3210 start: highlight current page tab in sec nav
+	function highlightCurrentPageTab(sec_nav_cont){
+		var urlPath, newUrl, activeTab;
+		var identifyPageUrl=window.location.pathname.replace(/\/$/, "");
+		identifyPageUrl=identifyPageUrl.split("/");
+		var activeTab;
+		//d-UAT-15-2: highlight products tab in sec nav on checkwarraty and multi warranty
+		var pageIdentifier = $('#pageIdentifier').val().toLowerCase();
+		//This link should be visible to only logged-in "Non-Business only" users
+		if(typeof profileDetails !== 'undefined' && profileDetails != undefined){
+			 if( profileDetails.loggedIn == true && profileDetails.profileType != 'COMMERCIAL'){
+				$('#sec-nav-dashboard').removeClass('hide');
+				// If No devices are added for the profile, then redirect user to add device page
+				if(profileDetails.numberOfDevices == 0){
+						newUrl = $('#sec-nav-dashboard').attr('href').replace('dashboard','add-device');
+						$('#sec-nav-dashboard').attr('href', newUrl);
+				}
+			}
+			else{
+				$('#sec-nav-dashboard').parent().addClass('hide');
+			}
+		}
+		else{
+			$('#sec-nav-dashboard').parent().addClass('hide');
+		}
+		if(pageIdentifier == 'warranty check' || pageIdentifier == 'multiplewarranty' || pageIdentifier == 'multipleWarrantyResults' || pageIdentifier == 'Product Warranty Result'){
+			$(sec_nav_cont + ' [href*="products"]').parent().addClass("active");
+		}
+		else if(pageIdentifier == 'add device'|| pageIdentifier == 'dashboard'){ //Adding this as part of personalization
+				$(sec_nav_cont + ' [href*="dashboard"]').parent().addClass("active");
+		}
+		else if(pageIdentifier == "productidentification"){
+			$(".dropdown-menu.mobile-nav-wrapper ul li").removeClass("active");
+		}
+		else{
+			if(identifyPageUrl.length == 2){
+				urlPath=identifyPageUrl[1];
+				$(sec_nav_cont + ' [href$="'+  urlPath +'"]').parent().addClass("active");
+				//activeTab = $(sec_nav_cont + ' [href*="'+  urlPath +'"]').parent().text();
+			}
+			else{
+				urlPath=identifyPageUrl[1] + '/'+ identifyPageUrl[2];
+				$(sec_nav_cont + ' [href*="'+  urlPath +'"]').parent().addClass("active");
+				//activeTab = $(sec_nav_cont + ' [href*="'+  urlPath +'"]').parent().text();
+			}
+		}
+		// activeTab will hold the value of current active tab in desktop view,
+		// so picking the highlighted tab value and placing as mobile header
+		activeTab = $(".main-nav").find('li.active').text();
+		if(activeTab != ''){
+			$('#mobileSearchTitle').html(activeTab + ' <span class="icon-dwn"></span></a>');
+		}
+	}
+	//3210 end
+
+	/*3226 start*/
+	/*hide dropdown*/
+	function hideDropdownAccessibility(element){
+		element
+			.attr('aria-hidden', 'true')
+			.css("display","none");
+	}
+
+	/*show dropdown*/
+	function showDropdownAccessibility(element){
+		element
+			.attr('aria-hidden', 'false')
+			.css("display","block");
+	}
+	/*3226 end*/
+
+	//6713: set maximum height of sec nav to make it scrollable
+	function setSecNavDropdownMaxHeight(){
+		var maxHeight=$(window).height() * 0.85;
+		$(sec_nav_cont + " > ul").css("max-height", maxHeight + "px");
+	}
+
+	$(document).ready(function(){
+
+	var pageIdentifier = $('#pageIdentifier').val().toLowerCase();
+	switch(pageIdentifier){
+		case "support home": $('#navSupportHome').addClass('active');
+			break;
+
+
+
+		case "software & driver": $('#navSoftwaresAndDrivers').addClass('active');		/*Grouping SWD*/
+			break;
+		case "swdselfservice": $('#navSoftwaresAndDrivers').addClass('active');
+			break;
+		case "swdguided": $('#navSoftwaresAndDrivers').addClass('active');
+			break;
+		case "swdlanding": $('#navSoftwaresAndDrivers').addClass('active');
+			break;
+		case "swdselfservicestep": $('#navSoftwaresAndDrivers').addClass('active');
+			break;
+		case "swdselfservicefinish": $('#navSoftwaresAndDrivers').addClass('active');
+			break;
+		case "swdpfinderbadresults": $('#navSoftwaresAndDrivers').addClass('active');
+		   break;
+		case "swdpfinderresults": $('#navSoftwaresAndDrivers').addClass('active');
+			break;
+		case "mediaordering": $('#navSoftwaresAndDrivers').addClass('active');
+			break;
+		case "productidentification": $(".dropdown-menu.mobile-nav-wrapper ul li").removeClass("active");
+			break;
+
+		case "error page":
+
+		    if($('.mediaordering').length>0)
+		            {
+		                  $('#navSoftwaresAndDrivers').addClass('active');
+			              break;
+		            }
+		    break;
+
+		case "identifyproduct": $('#navProducts').addClass('active');
+		break;
+
+
+
+
+
+
+		case "disputeform": 												/*Grouping "Hiding search on mobile"*/
+			//hide search toggle
+			$('#mobNavTrigSearch').addClass('hide');
+			break;
+
+
+		case "pfinderresults":
+		var identifytool=getParameterByName('tool');
+		if(identifytool=="s-001")
+		{
+			$('#navProducts').addClass('active');
+		}
+		else
+		{
+		$('#lnkContactHp').addClass('active');
+		}
+			//hide search toggle
+			$('#mobNavTrigSearch').addClass('hide');
+
+			break;
+
+
+		case "contact hp - anonymous": $('#lnkContactHp').addClass('active');			/*Grouping Contact HP*/
+			break;
+		case "contact hp product context view": $('#lnkContactHp').addClass('active');
+			//remove DMD from all popups
+			$('.loadDMDModal').remove();
+			break;
+
+
+		case "product details page": 					/*Grouping Product home*/
+				$('#navProducts').addClass('active');
+				break;
+		case "product home":
+				$('#navProducts').addClass('active');
+				break;
+		case "warranty check":
+				$('#navProducts').addClass('active');
+				break;
+		case "multiplewarranty":
+				$('#navProducts').addClass('active');
+				break;
+		case "product warranty result":
+				$('#navProducts').addClass('active');
+				break;
+		case "unknown warranty":
+				$('#navProducts').addClass('active');
+				break;
+		case "productreplacement":
+			$('#navProducts').addClass('active');
+			break;
+		case "ContactSecondaryNavigation":
+			$('#navProducts').addClass('active');
+			break;
+
+		case "changeproductpfinderresults":
+			var identifytool=getParameterByName('tool');
+			if(identifytool=="s-001")
+			{
+				$('#navProducts').addClass('active');
+			}
+
+
+				$('#mobNavTrigSearch').addClass('hide');
+
+				break;
+
+
+
+	}
+
+	/*move the select model popup to the bottom of the page*/
+	var selectModelPopup = $('#select-model-popup');
+	$('#select-model-popup').remove();
+	$('body').append(selectModelPopup);
+	if(typeof dmdPrivacyDocId != "undefined" && typeof concentraAjaxUrl != "undefined")
+    {
+		getDocIDAndBuildSolDiagLink();
+    }
+
+	document.querySelector('style').textContent += "@media only screen and (min-width: 801px), print and (min-width: 4in){#hp-support-com .hp-header .mobile-nav-wrapper ul { width: 112% !important;}}";
+
+
+});
+
+
+	checkHeight = function(){
+
+		if($('#secondaryNav').css('height') > '100px'){
+		return true;
+		}
+		else
+			return false;
+
+	}
+
+//Function to handle "Contact HP" click
+/*function handleContactHpClick(){
+	$('.lnkContactHpSeries').on('click',function(event){
+		event.preventDefault();
+		checkForSeries();
+	});
+
+
+}*/
+
+
+contactHPInit = function(url){
+
+	checkForSeries = function(redirect, swd){
+
+		//1. AJAX call to get Markup
+		//2. Paste markup into #select-model-content
+		//3. call getHPStyleDropdown
+		//isSwdTab is to check if the request is generated from S&D tab.
+		$("#pdpConf").parents("form").attr("target","");
+		var ajax_url = url;
+		var cc = getCCLC('cc');
+		var lc = getCCLC('lc');
+		var seriesID = seriesId;
+		var isSwdTab = typeof isSwDTabRequest != "undefined" ? isSwDTabRequest : false;
+
+		if(seriesId=="" || seriesId==null){
+			seriesID = "";
+		}
+
+		var requestJSON = {
+							'cc':cc,
+							'lc':lc,
+							'contactHPRedirect':redirect,
+							'drivers':swd,
+							'seriesId':seriesID,
+							'isSwdTab':isSwdTab
+							};
+
+		var successHandlerParams = {
+	      'contactHPRedirect':redirect
+
+	    };
+
+		var requestJSONValue = JSON.stringify(requestJSON);
+		callAjaxUtil('checkForSeries',ajax_url,'POST',seriesCheckSuccessHandler, 'html', requestJSONValue, successHandlerParams,seriesCheckFailureHandler);
+
+
+	}
+
+	seriesCheckSuccessHandler = function(data, params){
+		// if($("#pageIdentifier").val() != "Product Details Page"){
+			var CHPredirect = params.contactHPRedirect;
+			$('#select-model-content').empty().html(data);
+			$('#contactHpRedirect').val(CHPredirect);
+			$(".DMDOSDetection").hide();
+			$("#swdmediaorder").val("false");
+			$('#select-model-popup').modal('show');
+			/*This section is to show the model dropdowns outside the country */
+			if($('[data-toggle="secondaryContent"]').length) {
+
+			    $('[data-toggle="secondaryContent"]').click(function(e){
+			      e.preventDefault();
+			      $(this).parent("p").addClass('hidden');
+			      //$(this).parent('li').addClass('active');
+			      var tabShow = $(this).attr('data-target');
+			      $("#"+tabShow).removeClass('hidden').removeAttr("class");
+			    });
+			  }
+			/* This is to prevent the default action of submit on the select ur model overlay. Is populates which of the dropdown is submitted inCountry or outCountry */
+			$(document).on("click",".selectModelSubmit",function(e){
+				e.preventDefault();
+				var submitterId = $(this).attr("id");
+				var tempVar = "";
+				(submitterId=="pdpConf")? tempVar = "selectProduct": tempVar = "selectProductOutsideCountry";
+				$("#checkFor").val(tempVar);
+				$(this).parents("form").submit();
+				if($("#pageIdentifier").val() == "SWDSelfServiceStep"){
+					$("#select-model-popup").modal("hide");
+				}
+			});
+
+			getHpStyleDropdown();
+	// }
+	// else{
+	// 	$("#dvSwdScan").addClass("hidden");
+	// }
+	};
+
+	seriesCheckFailureHandler = function(){
+
+		$('#select-model-content').html('Sorry our system is down at this time, please try again');
+		$('#select-model-popup').modal('show');
+		getHpStyleDropdown();
+	};
+
+	getSelectedModelFromPopup = function(dropdownId,submitId){
+	 var selectedDropdown = $("#"+dropdownId);
+	 var selectedOption = $("#"+dropdownId+" option:selected");
+	 var submitButton = $("#"+submitId);
+	var selectedDropdownHPStyle = $('#'+dropdownId+'_dd_headerValue');
+
+	var prodJSON = productImagesJson;/* this comes from the variable defined in product information portlet
+	jQuery.parseJSON('{"status":{"message":"Success","code":200},"results":{"5070120":{"thumbnail":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02862291.jpg","supportNameOID":"5070121","atlasLarge":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02862525.png","small":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02862351.jpg","large":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02862348.jpg"},"5096400":{"thumbnail":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02862291.jpg","supportNameOID":"5096401","atlasLarge":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02862525.png","small":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02862290.jpg","large":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02862288.jpg"},"5096403":{"thumbnail":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02945570.jpg","supportNameOID":"5096404","atlasLarge":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02945633.png","small":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02945572.jpg","large":"http://product-images.www8-hp.com/digmedialib/prodimg/lowres/c02945568.jpg"}}}');
+	*/
+	var product = selectedDropdown.val();
+	var productText = selectedOption.html();
+
+	var imgsrc = "";
+
+	if(product=="0" || product==""){
+		submitButton.attr("disabled","disabled");
+		if(defaultImg != ""){
+			imgsrc = defaultImg;
+		}
+		else{
+			imgsrc = fallBackImg;
+		}
+	}
+	else{
+		submitButton.removeAttr('disabled');
+
+		if(Object.keys(prodJSON).length!=0)/*Null Check*/
+		{
+			if(prodJSON!=undefined){
+				for(obj in prodJSON.results){
+					if(undefined!= prodJSON.results[product]){
+						if(undefined!=prodJSON.results[product].atlasLarge){
+							imgsrc = prodJSON.results[product].atlasLarge;
+						}
+						else if(undefined!=prodJSON.results[product].large){
+							imgsrc = prodJSON.results[product].large;
+						}
+						else{
+							imgsrc = fallBackImg;
+						}
+
+					}
+					else{
+						imgsrc = fallBackImg;
+					}
+				}
+			}
+			else{
+						imgsrc = fallBackImg;
+			}
+
+		}
+	}
+	var productIcon = "";
+	if(selectedDropdownHPStyle.html()!=null){
+		productIcon= selectedDropdownHPStyle.html().split('<')[0];
+	}
+	jQuery("#prodImage").attr("src",imgsrc);
+	jQuery("#prodImage").attr("alt",productIcon);
+	//jQuery("#prodName").html(productText);
+}
+
+
+}//---end of init----
+
+//Function to check if the product is in series or not. If in series, show the modal or else navigate to contact hp.
+
+
+
+//Function to get appropriate url for contact HP
+function getContactHpUrl_original(){
+	//var hubNavUrlPrefix = "http://g9t0143.houston.hp.com/apps/Nav?h_client=s-a-r11839-1";
+	var docUrl = document.location.href;
+	var contextFinder = docUrl.split(document.location.origin)[1].split('/'+getCCLC('cc')+'-'+getCCLC('lc'))[1].split('#')[0].split('?')[0].split('&')[0];
+	var returnUrl = '/' + getCCLC('cc') + '-' + getCCLC('lc') + '/contact-hp';
+	var isInContext =  contextFinder.length > 2;
+	var isInseries = isInContext && docUrl.search(/model/g) == -1;
+
+	if(isInContext){
+		var h_productID = document.location.pathname;
+		h_productID = h_productID[h_productID.length-1] == '/' ? h_productID.substring(0, h_productID.length-1) : h_productID;
+		h_productID = h_productID.split(/\//g);
+		h_productID = h_productID[h_productID.length-1];
+
+		var skuValue = "";
+		if(docUrl.search('sku=') > 0){
+			skuValue = '&sku=' + docUrl.split(/sku=/g)[1].split(/\&/g)[0].split(/#/g)[0];
+		}
+
+		var h_product = '&h_product=' + h_productID;
+		var h_lang = '&h_lang=' + getCCLC('lc');
+		var h_cc = '&h_cc=' + getCCLC('cc');
+		var h_pagetype = '&h_pagetype=s-017';
+		returnUrl = hubNavUrlPrefix + h_product + h_lang + h_cc + h_pagetype + skuValue;
+	}
+
+	return returnUrl;
+}
+
+function getContactHpUrl(){  //Fail safe for hub nav failure
+	var docUrl = document.location.href;
+	var contextFinder = docUrl.split(document.location.origin)[1].split('/'+getCCLC('cc')+'-'+getCCLC('lc'))[1].split('#')[0].split('?')[0].split('&')[0];
+	var returnUrl = '/' + getCCLC('cc') + '-' + getCCLC('lc') + '/contact-hp';
+	var isInContext =  contextFinder.split(/\//g).length > 2;
+	var isInseries = isInContext && docUrl.search(/model/g) == -1;
+
+	if(isInContext){
+		var docPureLoc = docUrl.split(/\?/g)[0].split(/#/g)[0];
+		docPureLoc = docPureLoc[docPureLoc.length-1] == '/' ? docPureLoc.substring(0, docPureLoc.length-1) : docPureLoc;
+		var docParamArray = docPureLoc.split(/\//g);
+		var seriesName = '';
+		var seriesNameOid = '';
+		var productNameOid = '';
+
+		if(isInseries){
+			returnUrl = 'https://' + document.location.hostname + returnUrl + '/product/' + docParamArray[docParamArray.length - 2] + '/' + docParamArray[docParamArray.length - 1];
+		}
+		else{
+			returnUrl = 'https://' + document.location.hostname + returnUrl + '/product/' + docParamArray[docParamArray.length - 4] + '/' + docParamArray[docParamArray.length - 3] + '/' + docParamArray[docParamArray.length - 2] + '/' + docParamArray[docParamArray.length - 1];
+			if(docUrl.split('sku=').length > 1){
+				returnUrl += '?sku=' + docUrl.split('sku=')[1].split('&')[0].split('#')[0].split('/')[0];
+			}
+		}
+	}
+	return returnUrl;
+}
+¹å­ín      ^9^9AP½^AaA   d    :https://support.hp.com/wps/hp-support-common-portlets/resources/v2/js/ContactSecondaryNavigation.js necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/2.0 200 OK
+server: nginx/1.14.2
+content-type: application/javascript
+content-length: 30315
+last-modified: Tue, 26 Nov 2019 07:44:34 GMT
+vary: Accept-Encoding
+etag: "5ddcd7e2-766b"
+accept-ranges: bytes
+cache-control: max-age=604800
+expires: Mon, 10 Feb 2020 13:57:23 GMT
+date: Mon, 03 Feb 2020 13:57:23 GMT
+x-frame-options: ALLOW-FROM https://hpcdax.crm.dynamics.com, *.hp.com
+X-Firefox-Spdy: h2
+ original-response-headers server: nginx/1.14.2
+content-type: application/javascript
+content-length: 30315
+last-modified: Tue, 26 Nov 2019 07:44:34 GMT
+vary: Accept-Encoding
+etag: "5ddcd7e2-766b"
+accept-ranges: bytes
+cache-control: max-age=604800
+expires: Mon, 10 Feb 2020 13:57:23 GMT
+date: Mon, 03 Feb 2020 13:57:23 GMT
+x-frame-options: ALLOW-FROM https://hpcdax.crm.dynamics.com, *.hp.com
+X-Firefox-Spdy: h2
+ uncompressed-len 0 net-response-time-onstart 2285 net-response-time-onstop 2312   vk

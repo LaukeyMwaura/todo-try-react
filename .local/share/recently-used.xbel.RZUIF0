@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///tmp/mozilla_victor0/google-chrome-stable_current_amd64.deb" added="2020-02-03T14:04:15Z" modified="2020-02-03T14:04:15Z" visited="2020-02-03T14:04:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-02-03T14:04:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/slack-desktop-4.2.0-amd64.deb" added="2020-02-03T14:29:05Z" modified="2020-02-03T14:29:05Z" visited="2020-02-03T14:29:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-02-03T14:29:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Tue%201" added="2020-02-04T05:57:27Z" modified="2020-02-04T05:57:27Z" visited="2020-02-04T05:57:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-04T05:57:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Tue%201.odt" added="2020-02-04T05:57:28Z" modified="2020-02-04T15:17:13Z" visited="2020-02-04T05:57:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-04T15:17:13Z" count="43"/>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-04T06:17:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/my-first-webpage.html" added="2020-02-04T07:28:38Z" modified="2020-02-04T07:28:38Z" visited="2020-02-04T07:28:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="atom" exec="&apos;atom %u&apos;" modified="2020-02-04T07:28:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Q%20and%20A" added="2020-02-04T08:31:35Z" modified="2020-02-04T08:31:35Z" visited="2020-02-04T08:31:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-04T08:31:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Q%20and%20A.odt" added="2020-02-04T08:31:36Z" modified="2020-02-04T08:31:36Z" visited="2020-02-04T08:31:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-04T08:31:36Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Pictures/Screenshot%20from%202020-02-04%2012-28-45.png" added="2020-02-04T09:28:46Z" modified="2020-02-04T09:28:46Z" visited="2020-02-04T09:28:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-04T09:28:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/moringa-school-projects/cookie-recipe" added="2020-02-04T11:49:44Z" modified="2020-02-04T11:49:44Z" visited="2020-02-04T11:49:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-04T11:49:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/cookie-recipe-master.zip" added="2020-02-04T13:37:42Z" modified="2020-02-04T13:37:42Z" visited="2020-02-04T13:37:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2020-02-04T13:37:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/moringa-school-projects/pics/ford.jpg" added="2020-02-04T13:45:25Z" modified="2020-02-04T13:45:25Z" visited="2020-02-04T13:45:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-04T13:45:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/moringa-school-projects/pics/html%20attributes.pdf" added="2020-02-04T14:10:04Z" modified="2020-02-04T14:10:04Z" visited="2020-02-04T14:10:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-04T14:10:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

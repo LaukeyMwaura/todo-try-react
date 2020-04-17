@@ -1,0 +1,39 @@
+
+{
+"buildVars": {
+"extensionId": "_jnMembers_@www.pdfconverttools.com",
+"configDefId": "233007840",
+"toolbarDisplayName": "PDFConvertTools",
+"internalProductName": "pdfconverttools",
+"filenamePrefix": "jn",
+"version": "13.921.17.10915",
+"buildDate": "2020-01-13T16:35:37.763Z",
+"localStorageUrl": "https://pdfconverttools.dl.myway.com/blank.jhtml",
+"localStorageKeys": [],
+"downloadDomain": ".pdfconverttools.com",
+"livePing": {
+"url": "https://live.tb.ask.com/tr.gif",
+"interval": 21600000
+},
+"toolbarDataTimeout": 3000,
+"pixelUrl": "https://pdfconverttools.dl.tb.ask.com/install_pixels.jhtml?partner=${partnerID}",
+"unifiedLoggingUrl": "https://anx.tb.ask.com/anx.gif",
+"newTabURL": "https://hp.myway.com/pdfconverttools/ttab02chr/index.html?p2=${partnerID}&n=${installDateHex}&ptb=${toolbarID}&si=${partnerSubID}&cwsid=${cwsid}",
+"track": "TTAB03",
+"coId": "CPZ",
+"uninstallSurveyUrl": "https://pdfconverttools.dl.myway.com/uninstall.jhtml?c=<!--toolbarID-->&ptb=<!--partnerID-->",
+"defaultPartnerId": "^CPZ^chr999^TTAB03^",
+"searchExtensionEnabled": true,
+"searchExtensionUrl": "https://ext.ask.com/index.jhtml?productName={{productName}}&installDate={{installDate}}&partnerId={{partnerID}}&si={{partnerSubID}}&tbGuid={{toolbarGUID}}&coId={{coID}}",
+"offerServiceConfigUrl": "",
+"babConfigUrl": "",
+"babType": "newTab"
+},
+"csw": {
+"nativemessagingHostName": "com.mindspark.pdfconverttools_jn"
+},
+"widgets": [
+    ],
+"executablePackages": [
+    ]
+}

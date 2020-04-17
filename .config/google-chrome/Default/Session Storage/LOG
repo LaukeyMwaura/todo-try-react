@@ -1,0 +1,15 @@
+2020/02/11-19:02:45.301 7bd Reusing MANIFEST /home/victor/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2020/02/11-19:02:45.302 7bd Recovering log #139
+2020/02/11-19:02:45.401 7bd Reusing old log /home/victor/.config/google-chrome/Default/Session Storage/000139.log 
+2020/02/11-19:02:47.012 8ea Level-0 table #143: started
+2020/02/11-19:02:47.340 8ea Level-0 table #143: 17027 bytes OK
+2020/02/11-19:02:47.666 8ea Delete type=0 #139
+2020/02/11-19:02:47.666 8ea Compacting 4@0 + 1@1 files
+2020/02/11-19:02:48.604 8ea Generated table #144@0: 1827 keys, 45820 bytes
+2020/02/11-19:02:48.604 8ea Compacted 4@0 + 1@1 files => 45820 bytes
+2020/02/11-19:02:51.013 8ea compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/02/11-19:02:51.014 8ea Delete type=2 #134
+2020/02/11-19:02:51.014 8ea Delete type=2 #132
+2020/02/11-19:02:51.014 8ea Delete type=2 #137
+2020/02/11-19:02:51.014 8ea Delete type=2 #140
+2020/02/11-19:02:51.014 8ea Delete type=2 #143

@@ -1,0 +1,653 @@
+var isClearMessage = false;
+var comingFromPfinder = false;
+var hadError = false;
+var product_name_for_search;
+//New property to get actual value excluding ghost text with trim()
+jQuery.fn.actualVal=function() {
+    if(this[0]) {
+        var ele=$(this[0]);
+        if(ele.attr('ghostText')!=''&&ele.val()==ele.attr('ghostText')) {
+            return '';
+        } else {
+           // return ele.val().trim();
+            return $.trim(ele.val());
+        }
+    }
+    return undefined;
+};
+
+//New property to get actual value excluding ghost text without trim();
+jQuery.fn.trueVal=function() {
+    if(this[0]) {
+        var ele=$(this[0]);
+        if(ele.attr('ghostText')!=''&&ele.val()==ele.attr('ghostText')) {
+            return '';
+        } else {
+            return ele.val();
+        }
+    }
+    return undefined;
+};
+
+
+//Create the error message inside the text box.
+createSearchErrorMessage = function(el, msg) {
+    if (!isClearMessage) {
+        var topOffset = $(el).position().top + 38;
+        $('<span class="errorMessage"><span class="errorIcon"></span>' + msg + '</span>').insertAfter(el);
+        $(el).addClass('errorElement');
+        $('.errorMessage').on('click', function(event) {
+            clearErrorMessage(el);
+            $('.search-input').parent().find('.errorMessage').remove();
+            $(el).focus();
+        });
+
+        if("#btnSplitSearchSubmit") {
+            $('#btnSplitSearchSubmit').focus();
+        }
+        if("#fmp_submit") {
+            $('#fmp_submit').focus();
+        }
+    } else {
+        isClearMessage = !isClearMessage;
+    }
+}
+
+
+//Validate the textboxes before completing form submit.
+//new
+var redirectToSearchResult = function(queryParam,additionalText,osVal,productVal,selectedProdName,classVal,overlay){
+	
+    var query = queryParam["searchQuery"];
+    productVal = (checkValidity(queryParam["productVal"])) ? queryParam["productVal"] : productVal;
+    var pname = (checkValidity(queryParam["pName"])) ? queryParam["pName"] : "";
+    var filter = $("#searchCategory").length > 0 ? $("#searchCategory").val() : "-1";
+    var cc = getCCLC("cc");
+
+    var lc = getCCLC("lc");
+
+    var source = $("#source").val();
+    panme = encodeURIComponent(pname);
+
+    var lc = getCCLC("lc");
+    var pfinderSource = "pdp";
+
+
+    if(comingFromPfinder == true){
+    	
+        if(source == "swdPfinder"){
+        	
+            // Setting base URLs based on serach source-from driver pfinder
+            var searchRedirectLink = "//" +location.hostname +"/"+cc+"-"+lc+"/drivers/selfservice/identify";
+            pfinderSource = "drivers";
+
+        }
+        else if(source == "contacthpPfinder"){  //Setting base URLs based on serach source-from contact-hp pfinder
+        	//Jerry--Convert lc into portal specific manually as internal conversion doesn't happen
+        	lc = localeConversion(cc,lc);
+            var searchRedirectLink = "//" +location.hostname +"/"+cc+"-"+lc+"/contact-hp/identify";
+            pfinderSource = "contact";
+            }
+        else if(source == "pdpPfinder"){  //Setting base URLs based on serach source-from contact-hp pfinder
+             var searchRedirectLink = "//" +location.hostname +"/"+cc+"-"+lc+"/products/identify";
+             pfinderSource = "pdp";
+            }
+        else{
+            var searchRedirectLink = "//" +location.hostname +"/"+cc+"-"+lc+"/search";
+
+            }
+        }
+    else{
+        var searchRedirectLink = "//" +location.hostname +"/"+cc+"-"+lc+"/search";
+    }
+
+
+    panme = encodeURIComponent(pname);
+
+    if(query == ""){
+    	query = getParameterByName("q");
+    }
+    
+    if(additionalText !== null && typeof additionalText !== "undefined" && additionalText !== "")
+    {
+        query = query + "+" + additionalText.trim();
+    }
+
+    query = encodeURIComponent(query); /*Encode the special characters like & or ? */
+
+    searchRedirectLink = searchRedirectLink + "?q=" + query +"&filter="+filter+"&origin="+pfinderSource;
+
+    if(productVal !== null && typeof productVal != "undefined" && productVal !== "")
+    {
+        searchRedirectLink = searchRedirectLink +"&product=" + encodeURIComponent(productVal);
+
+        // so that java controller doesn't perform product search
+        searchRedirectLink = searchRedirectLink + "&predict=true";
+    }
+    else{ /*PDP page - pick up the product parameter from a hidden variable */
+    	if($("#pdpContextValue").length > 0 && $("#pdpContextValue").val() !== "" ){
+    		searchRedirectLink = searchRedirectLink +"&product=" + $("#pdpContextValue").val();
+
+    	}
+    }
+    if(pname !== null && typeof pname != "undefined" && pname !== "")
+    {
+        searchRedirectLink = searchRedirectLink +"&pname=" + encodeURIComponent(pname);
+    }
+    if(selectedProdName !== null && typeof selectedProdName != "undefined" && selectedProdName !== "")
+    {
+        searchRedirectLink = searchRedirectLink +"&selectedProduct=" + encodeURIComponent(selectedProdName);
+    }
+    if(osVal !== null && typeof osVal != "undefined" && osVal !== "")
+    {
+        searchRedirectLink = searchRedirectLink +"&os=" + encodeURIComponent(osVal);
+    }
+    if(classVal !== null && typeof classVal != "undefined" && classVal !== "")
+    {
+        searchRedirectLink = searchRedirectLink +"&class=" + encodeURIComponent(classVal);
+    }
+    if(overlay !== null && typeof overlay != "undefined" && overlay !== "")
+    {
+        if(overlay){
+            searchRedirectLink = searchRedirectLink +"&overlay=true";
+        }
+    }
+
+    // append a device type identifier to indicate what the user is searching for
+    if(comingFromPfinder == true && (source == "swdPfinder" || source == "contacthpPfinder")){
+    	
+        searchRedirectLink = getPfinderResultURL(searchRedirectLink);
+    }
+
+    return searchRedirectLink;
+}
+
+/* Defect 3590 pFinder button fix for fr-fr locale products page */
+function fixPfinderButtonFrLocale(){
+    if(window.location.href.indexOf("drivers")==-1 && window.location.href.indexOf("contact")==-1) {
+        var cc = getCCLC("cc");
+        var lc = getCCLC("lc");
+        /* Defect UAT 18 fix for other french Locales*/
+        if(( cc === "fr" && lc === "fr" ) || ( cc === "be" && lc === "fr" ) || ( cc === "ch" && lc === "fr" ) || ( cc === "emea_africa" && lc === "fr" ) ){
+            $("#grayBlockParent .form-outer div.findButton").css({
+                "padding-right":"1px",
+                "padding-left":"4px"
+            }).removeClass("col-lg-6").addClass("col-lg-7");
+
+            $("#grayBlockParent .form-outer div.hasTypeahead").removeClass("col-lg-18").addClass("col-lg-17");
+            $("#grayBlockParent .form-outer div.hasTypeahead").removeClass("col-md-20").addClass("col-md-18");
+            $("#grayBlockParent .form-outer div.hasTypeahead").removeClass("col-sm-17").addClass("col-sm-16");
+        }
+        if(cc === "br" && lc === "pt"){
+            $("#grayBlockParent .form-outer div.findButton").addClass(" brLocale");
+        }
+    }
+}
+/* Defect 3590 */
+
+$(document).ready(function(){
+   
+    // calling here this method for now, need to move defination and calling to a Global themes
+    handleSearchBannerText();
+
+    /* Defect 3590 pFinder button fix for fr-fr locale products page */
+    fixPfinderButtonFrLocale();
+    /* Defect 3590 */
+
+    /* Defect 3569 focus on SN/PN input field SWD page when modal closes */
+    $('#serial-number-modal').on('hidden.bs.modal [data-dismiss="modal"]', function (event) {
+        $("#tooltipPadPfinder").focus();
+    });
+    /* Defect 3569 end */
+
+    /* Defect 3145 Added scroll to make options in typeahead visible */
+    $("#search-input-pfinder").on("focus",function(){
+        if( $(window).width() < 801 ){
+            $("html, body").animate({
+                scrollTop: $("#grayBlockParent").offset().top
+            }, "slow");
+        }
+        /*
+        * defect d-UAT-9: remove top scrolling from tablet/Laptop
+        else{
+            $("html, body").animate({
+                scrollTop: $("#grayBlockParent").offset().top
+            }, "slow");
+        }*/
+    });
+    /* Defect 3145 End */
+
+    /* defect 3122 start */
+    $('.pfinder-search').on("keyup input",function(){
+      if($(this).val().length > 0){
+            $(".searchSubmit.findBtn").attr("disabled",false);
+            /*3409: start*/
+            $(".searchSubmit.findBtn").attr("aria-disabled",false);
+            /*3409: end*/
+        }
+        else{
+            $(".searchSubmit.findBtn").attr("disabled",true);
+            /*3409: start*/
+            $(".searchSubmit.findBtn").attr("aria-disabled",true);
+    
+            /*3409: start*/
+        }
+    });
+    /* defect 3122 end */
+
+		// new enter icon in mobile for pfinder submit - on click of icon, submit form
+		$(".pfinder-mobile-btn").on("click",function(event){
+			$(this).parents($("#original-support")).submit();
+		});
+
+		$(".pfinder-mobile-enter-icon").on("click",function(event){
+			$(this).parents($("#original-support")).submit();
+		});
+
+    var pageIdentifierName = $('#pageIdentifier').val().toLowerCase();
+
+    if(pageIdentifierName == 'pfinderresults' || pageIdentifierName =='searchresult' || pageIdentifierName =='contact hp - anonymous' || pageIdentifierName =='swdpfinderbadresults' || pageIdentifierName =='swdselfservice' || pageIdentifierName == 'Product Home'){
+     getToolTipData(['#product-serial-number-modal','#serial-number-modal'], "#tooltip-template", "/hp-pps-services/content/tooltipdoc");
+    }
+    /*The below function is to automatically adjust the padding of text box according to blue dropdown. */
+	$("#search-dropdown").each(function(){
+		var dynamicDropdownHook = $(this).innerWidth() + 15;
+		if($("html").attr("dir")=="ltr"){
+			$(this).parents(".search-bg").find(".search-input").css("padding-left",dynamicDropdownHook);
+		}
+		else{
+			$(this).parents(".search-bg").find(".search-input").css("padding-right",dynamicDropdownHook);
+		}
+		$(this).parents(".search-bg").find(".typeaheadHook").val(dynamicDropdownHook); // Do not remove - VV
+		if($("body").hasClass("ie")){
+			$(this).parents(".search-bg").find(".search-input").focus();
+			$(this).parents(".search-bg").find(".search-input").blur();
+		}
+		/*setTimeout(function(){
+			$("#search-dropdown").parents(".search-bg").find(".search-input").addClass("clearfix");
+		},100); */
+	});
+	/* End*/
+
+
+    $('.search-input').focus(function() { /* This is to close the blue dropdown on focus of the textbox */
+        $(this).parents(".search-bg").find(".dropdown").removeClass("open");
+    });
+
+    $(".search-bar-form").each(function() {
+    	var comingFromTypeahead = false;
+        $(this).on("submit",function(event) {
+            //To differentiate between search and pfinder search
+            if($(this).find(".search-input").hasClass("pfinder-search")){
+                comingFromPfinder = true;
+            }
+        	var searchEl = $(this).find(".search-input");
+        	 if ($(searchEl).actualVal() == '') {
+        	        event.preventDefault();
+        	        if ($(searchEl).parent().find('.errorMessage').attr('class') != 'errorMessage') {
+        	            createSearchErrorMessage(searchEl,$(searchEl).attr('errormessage'));
+        	            //createErrorMessage('.search-input', $('.search-input').attr('errormessage'));
+        	        }
+        	    }
+        	 else{
+        		 event.preventDefault();
+        		 var searchParam = {};
+                 searchParam["searchQuery"] = $(searchEl).actualVal();
+                 if( checkValidity($(searchEl).data("productid")) && ($(searchEl).data("productid") != "")){
+                	 /* take the productVal from typeahead and send it to search. */
+                	 searchParam["productVal"] = $(searchEl).data("productid");
+                	 comingFromTypeahead = true;
+                 }
+                 else if(typeof category_nav_prod !=="undefined"){
+                	 /* take the productVal from drilldown and send it to search. */
+                	 searchParam["productVal"] = category_nav_prod;
+                 }
+                 else{
+                	 searchParam["productVal"] = "";
+                 }
+                 if(!(comingFromTypeahead)){
+                	 if(typeof productNameForSearch !=="undefined"){
+                    	 searchParam["pName"] = productNameForSearch;
+                     }
+                     else if($("#pm_series_product_name").length > 0 && checkValidity($("#pm_series_product_name").val())){
+                    	 if($("#pageIdentifier").val() != 'SearchResult'){
+                    		 searchParam["pName"] = $("#pm_series_product_name").val();
+                    	 }
+                     }
+                 }
+                 var redirectSearchUrl;
+                 var regex = new RegExp("[a-zA-Z0-9]{5,15}");
+                 var query=searchParam["searchQuery"];
+                 var source = $("#source").val();
+                 if (comingFromPfinder == true && (regex.test(query))) {
+                     // show spinner
+                     var response = getProductInfo(query,source);
+                     // hide spinner
+                   
+                     if (response && response.hubResultRedirectUrl) {
+                         redirectSearchUrl = response.hubResultRedirectUrl;
+                     } else {
+                         redirectSearchUrl = redirectToSearchResult(searchParam);
+                     }
+                }
+                else{
+                 redirectSearchUrl = redirectToSearchResult(searchParam);
+                }
+        		 window.location.assign(redirectSearchUrl);
+        	 }
+        });
+    });
+
+
+	$('.icon-x').on('click',function(event){			//Handle question text clear(X) button events
+		event.preventDefault();
+		if ($(this).parent(".hasTypeahead").find(".predictive-results").length > 0) {
+            $(this).parent(".hasTypeahead").find(".predictive-results").remove();
+
+        }
+		var searchEl = $(this).parent().find(".search-input");
+		 if ($(searchEl).parent().find('.errorMessage').attr('class') == 'errorMessage') {
+	            hadError = true;
+	            clearErrorMessage($(this));
+	            $($(searchEl)).parent().find('.errorMessage').remove();
+	            $($(searchEl)).focus();
+	        }
+		abortAjaxUtil(); // abort any initiated ajax calls.
+		$(searchEl).siblings(".searching").hide();
+        $(searchEl).val('').focus();
+
+        /* defect 3122 start */
+        $(".searchSubmit.findBtn").attr("disabled",true);
+        $(".searchSubmit.findBtn").attr("aria-disabled",true);
+        /* defect 3122 end */
+	})
+	.on('keydown',function(event){
+		var eventKeyCode = event.keyCode ? event.keyCode : event.which;
+		if(eventKeyCode == 13 || eventKeyCode == 32){
+			event.preventDefault();
+
+			if(eventKeyCode == 13){
+				isClearMessage = !isClearMessage;
+			}
+                if ($(this).parent(".hasTypeahead").find(".predictive-results").length > 0) {
+                    $(this).parent(".hasTypeahead").find(".predictive-results").remove();
+
+                }
+                var searchEl = $(this).parent().find(".search-input");
+                if ($(searchEl).parent().find('.errorMessage').attr('class') == 'errorMessage') {
+       	            hadError = true;
+       	            clearErrorMessage($(this));
+       	            $($(searchEl)).parent().find('.errorMessage').remove();
+       	            $($(searchEl)).focus();
+       	        }
+	            abortAjaxUtil(); // abort any initiated ajax calls.
+	            $(searchEl).siblings(".searching").hide();
+	            $(searchEl).val('').focus();
+		}
+	});
+
+	$('.icon-x').on('click',function(event){			//Handle question text clear(X) button events
+		event.preventDefault();
+		$(this).hide();
+
+        if ($(this).parent(".hasTypeahead").find(".predictive-results").length > 0) {
+            $(this).parent(".hasTypeahead").find(".predictive-results").remove();
+            ($(this).parent(".hasTypeahead").find(".predictive-results").css("background", "#000"));
+        }
+        $(this).parent(".hasTypeahead").find('.search-input').val('').focus();
+
+        /* defect 3122 start */
+        $(".searchSubmit.findBtn").attr("disabled",true);
+        $(".searchSubmit.findBtn").attr("aria-disabled",true);
+        /* defect 3122 end */
+	})
+	.on('keydown',function(event){
+		var eventKeyCode = event.keyCode ? event.keyCode : event.which;
+		if(eventKeyCode == 13 || eventKeyCode == 32){
+			event.preventDefault();
+			$(this).hide();
+			if(eventKeyCode == 13){
+				isClearMessage = !isClearMessage;
+			}
+                if ($(this).parent(".hasTypeahead").find(".predictive-results").length > 0) {
+                    $(this).parent(".hasTypeahead").find(".predictive-results").remove();
+                    ($(this).parent(".hasTypeahead").find(".predictive-results").css("background", "#000"));
+                }
+                $(this).parent(".hasTypeahead").find('.search-input').val('').focus();
+		}
+	});
+
+	$('.search-input').each(function(){
+		  $(this).on('keyup', function(event) {
+			        var eventKeyCode = event.keyCode ? event.keyCode : event.which;
+			        /*  if (eventKeyCode == 13) {
+			           $('#btnSplitSearchSubmit').trigger('click');
+			        }   Commented to remove error message on clear from cross */
+			        if ($(this).parent().find('.errorMessage').attr('class') == 'errorMessage' && $(this).actualVal().length > 0) { //Clear error message from search box on keyup
+			            clearErrorMessage(this);
+			            $(this).parent().find('.errorMessage').remove();
+			        }
+			        if ($(this).actualVal().length > 0) {
+			        	$(this).parent(".hasTypeahead").find('.icon-x').show();
+			        } else if ($(this).actualVal().length == 0) {
+			        	$(this).parent(".hasTypeahead").find('.icon-x').hide();
+			        }
+			        if (eventKeyCode != 9) {
+			            hadError = true;
+			        }
+			    })
+			    .on('focus', function(event) {
+			        if ($(this).parent().find('.errorMessage').attr('class') == 'errorMessage') {
+			            hadError = true;
+			            clearErrorMessage($(this));
+			            $($(this)).parent().find('.errorMessage').remove();
+			            $($(this)).focus();
+			        }
+			    });
+
+	});
+
+
+	if($('body').hasClass('ie8')){
+		$('#original-support').submit(function(event){
+			validateFormData(event);
+		});
+	}
+});
+
+
+// keyboard handling search dropdown
+
+function handleSearchBannerText(){
+
+	var pageName = $('#pageIdentifier').val();
+    var $userName = $(".userFirstName");
+    var cc = getCCLC("cc");
+    var pToggle = $('#pToggle').val();
+
+    if(pToggle && pToggle == "on"){
+	    if (typeof profileDetails !== 'undefined' && profileDetails && (profileDetails.firstName || profileDetails.lastName)) {
+	        // signed in user
+
+	        var userName;
+	        if (cc == 'jp' || cc == 'kr') {
+	            userName = profileDetails.lastName;
+	        } else {
+	            userName = profileDetails.firstName;
+	        }
+	        $userName.html(userName);
+
+	        // If page is home-page handles logged in or not case and mobile & desktop
+	        if (pageName == 'Support Home' && $(".signedInMessage").hasClass('hide')) {
+	            // Banner Part
+	            $(".signedInMessage").removeClass("hide"); // Showing Hi, user. What would you like help with?
+	            $('.defaultBannerMessage').addClass('hide');
+
+	            // Added header manipulation code to show user name
+	            $(".welcomeMessageNew").removeClass("hide"); // showing Welcome, userName
+	            $(".signInRegisterLink").addClass("hide"); // hiding sign in / register
+	        }
+	        else if (pageName == 'Dashboard' || pageName == 'Add Device') {
+	            $(".dashboardMessage").removeClass("hide"); // showing Hi, user. welcome to your dashbaord
+	            $(".defaultBannerMessage").addClass("hide"); // showing Let us help you better by registering or signing in
+
+	            // Added header manipulation code to show user name
+	            $(".welcomeMessageNew").removeClass("hide"); // showing Welcome, userName
+	            $(".signInRegisterLink").addClass("hide"); // hiding sign in / register
+	        } else {
+	            // for all other pages
+	            $(".welcomeMessageNew").removeClass("hide"); // showing Welcome, userName
+	            $(".signInRegisterLink").addClass("hide"); // hiding sign in / register
+	        }
+
+	    } else {
+	        // not signed in user
+
+	        // Banner manipulation
+	        $(".defaultBannerMessage").removeClass("hide"); // showing Let us help you better by registering or signing in
+	        $(".signedInMessage").addClass("hide");
+	        $(".dashboardMessage").addClass("hide");
+
+	        // Header manipulation
+	        $(".signInRegisterLink").removeClass('hide'); // sign in - header
+	        $(".welcomeMessageNew").addClass("hide"); // welcome user, - header
+	    }
+    }else{
+
+    	// Personalization turned off for this locale
+    	// show the "Let us help you!" message instead
+    	$(".pTiggledOffBannerMsg").removeClass("hide");
+    }
+}
+
+/**
+ * @param searchRedirectLink
+ * @returns
+ */
+function getPfinderResultURL(searchRedirectLink){
+	
+	var currentURL = window.location.href;
+	
+    if(currentURL.indexOf("/printer")>-1) {
+        searchRedirectLink = searchRedirectLink + "&devicetype=printer&type=printers";
+    } else if(currentURL.indexOf("/laptop")>-1) {
+        searchRedirectLink = searchRedirectLink + "&devicetype=laptop&type=laptops";
+    } else if(currentURL.indexOf("/desktop")>-1) {
+        searchRedirectLink = searchRedirectLink + "&devicetype=desktop&type=desktops";
+    }else{
+    	searchRedirectLink = searchRedirectLink + "&type=others";
+    }
+    
+	return searchRedirectLink;
+}
+
+function getProductInfo(searchParam,source){
+    var response;
+	var urlVal = "/hp-pps-services/os/getProductInfo";
+	//var secureTokenVal = $('#secureTokenField').val(); //retrieve string in which key is stored
+	//var tokenIdSerial = $('#wFormSerialNumber').attr("token");
+	//var tokenIdProduct = $('#wFormProductNum').attr("token");
+	//var ssidValue = "";
+	var sid = "";
+	var redirectUrl;
+	var redirectPage=window.location.href.indexOf("contact")!=-1?"s-017":window.location.href.indexOf("driver")!=-1?"s-002":"s-001";
+	//if(secureTokenVal.indexOf(tokenIdSerial)!=-1){  //check if the token key is present in the string of tokens
+		 //ssidValue = JSON.parse($("#secureFieldJson").val());
+		 //sid = ssidValue[tokenIdSerial];
+	//}else if(secureTokenVal.indexOf(tokenIdProduct)!=-1){  //check if the token key is present in the string of tokens
+		// ssidValue = JSON.parse($("#secureFieldJson").val());
+		// sid = ssidValue[tokenIdProduct];
+	//}
+	console.log("warrantyCheck getWarrantyInfo 2 sid: " + sid);
+	var dataJSON={
+			"serialnum" : searchParam["searchQuery"],
+			"counpurchase"	: getCCLC("cc"),
+			"cc" : getCCLC("cc"),
+			"lc" : getCCLC("lc"),
+			"redirectPage" :redirectPage,
+			"ssid" : sid
+		};
+	if($('#productNumDiv').is(':visible')){
+		dataJSON.modelNum = $('#wFormProductNum').val();
+	}
+
+	$.ajax({
+      	type: 'GET',
+      	url : urlVal,
+        dataType:'json',
+      	data : dataJSON,
+
+	  success : function(data) {
+	    	console.log(data);
+            populateSSID();
+            response=data;
+	        console.log("warrantyCheck getWarrantyInfo 2 calling populateSSID on success");
+	        if (response && response.hubResultRedirectUrl) {
+	        	redirectUrl = response.hubResultRedirectUrl;
+	         } else {
+	        	 redirectUrl = redirectToSearchResult(searchParam);
+	         }
+	        window.location.assign(redirectUrl);
+	        
+		},
+	    error : function(e) {
+            //Do nothing,let actual call proceed
+	        console.log('ERROR: ', e);
+	        populateSSID();
+	        
+	    }
+    });
+    return response;
+}
+
+//Function for serial number search, if the serial number matches rejex, idol call is not made
+function redirectToResults() {
+	var redirectSearchUrl;
+	comingFromPfinder = true;
+	var query;
+	$("#modalPageLevelSpinner").modal("show");
+	var regex = new RegExp("[a-zA-Z0-9]{10,15}");
+	var query = $("#search-input-pfinder").val();
+	$('.pfinder-search').each(function(i, obj) {
+		if ($(this).val()) {
+			query = $(this).val();
+		}
+	});
+	var source = $("#source").val();
+	var searchParam = {};
+	searchParam["searchQuery"] = query;
+	if ((regex.test(query))) {
+
+		getProductInfo(searchParam, source);
+
+	} else {
+		redirectSearchUrl = redirectToSearchResult(searchParam);
+		window.location.assign(redirectSearchUrl);
+	}
+
+}èBÊäUú      ^9^9APΩ^AaA   V    :https://support.hp.com/wps/hp-hero-support-search/resources/scripts/splitSearchBox.js necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/2.0 200 OK
+server: nginx/1.14.2
+content-type: application/javascript
+content-length: 25037
+last-modified: Mon, 08 Apr 2019 09:10:48 GMT
+vary: Accept-Encoding
+etag: "5cab1018-61cd"
+accept-ranges: bytes
+cache-control: max-age=604800
+expires: Mon, 10 Feb 2020 13:57:24 GMT
+date: Mon, 03 Feb 2020 13:57:24 GMT
+x-frame-options: ALLOW-FROM https://hpcdax.crm.dynamics.com, *.hp.com
+X-Firefox-Spdy: h2
+ original-response-headers server: nginx/1.14.2
+content-type: application/javascript
+content-length: 25037
+last-modified: Mon, 08 Apr 2019 09:10:48 GMT
+vary: Accept-Encoding
+etag: "5cab1018-61cd"
+accept-ranges: bytes
+cache-control: max-age=604800
+expires: Mon, 10 Feb 2020 13:57:24 GMT
+date: Mon, 03 Feb 2020 13:57:24 GMT
+x-frame-options: ALLOW-FROM https://hpcdax.crm.dynamics.com, *.hp.com
+X-Firefox-Spdy: h2
+ uncompressed-len 0 net-response-time-onstart 2245 net-response-time-onstop 2423   aÕ

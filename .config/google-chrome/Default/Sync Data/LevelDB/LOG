@@ -1,0 +1,18 @@
+2020/02/11-19:02:17.875 794 Reusing MANIFEST /home/victor/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2020/02/11-19:02:17.957 794 Recovering log #138
+2020/02/11-19:02:18.360 794 Reusing old log /home/victor/.config/google-chrome/Default/Sync Data/LevelDB/000138.log 
+2020/02/11-19:02:55.150 969 Level-0 table #142: started
+2020/02/11-19:02:55.530 969 Level-0 table #142: 89068 bytes OK
+2020/02/11-19:02:55.938 969 Delete type=0 #138
+2020/02/11-19:28:53.946 969 Level-0 table #144: started
+2020/02/11-19:28:54.442 969 Level-0 table #144: 84774 bytes OK
+2020/02/11-19:28:55.006 969 Delete type=0 #141
+2020/02/11-19:28:55.007 969 Compacting 4@0 + 1@1 files
+2020/02/11-19:28:55.282 969 Generated table #145@0: 809 keys, 36018 bytes
+2020/02/11-19:28:55.282 969 Compacted 4@0 + 1@1 files => 36018 bytes
+2020/02/11-19:28:55.663 969 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/02/11-19:28:55.664 969 Delete type=2 #134
+2020/02/11-19:28:55.664 969 Delete type=2 #139
+2020/02/11-19:28:55.664 969 Delete type=2 #144
+2020/02/11-19:28:55.664 969 Delete type=2 #137
+2020/02/11-19:28:55.664 969 Delete type=2 #142

@@ -1,0 +1,11 @@
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+
+[Added Associations]
+text/html=code.desktop;
+text/css=code.desktop;
+text/plain=code.desktop;

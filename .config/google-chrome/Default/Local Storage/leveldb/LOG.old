@@ -1,0 +1,6 @@
+2020/02/11-12:53:49.865 7b2 Reusing MANIFEST /home/victor/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2020/02/11-12:53:49.865 7b2 Recovering log #133
+2020/02/11-12:53:50.472 7b2 Reusing old log /home/victor/.config/google-chrome/Default/Local Storage/leveldb/000133.log 
+2020/02/11-12:55:50.524 953 Level-0 table #138: started
+2020/02/11-12:55:50.559 953 Level-0 table #138: 18297 bytes OK
+2020/02/11-12:55:50.611 953 Delete type=0 #133

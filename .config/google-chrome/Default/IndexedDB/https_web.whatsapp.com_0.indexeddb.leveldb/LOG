@@ -1,0 +1,12 @@
+2020/02/11-12:53:55.342 787 Reusing MANIFEST /home/victor/.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/02/11-12:53:55.343 787 Recovering log #14
+2020/02/11-12:53:57.346 787 Reusing old log /home/victor/.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000014.log 
+2020/02/11-13:59:33.749 1494 Level-0 table #19: started
+2020/02/11-13:59:33.832 1494 Level-0 table #19: 1327393 bytes OK
+2020/02/11-13:59:33.933 1494 Delete type=0 #14
+2020/02/11-14:21:28.748 1494 Compacting 1@1 + 1@2 files
+2020/02/11-14:21:29.250 1494 Generated table #20@1: 38461 keys, 1738467 bytes
+2020/02/11-14:21:29.250 1494 Compacted 1@1 + 1@2 files => 1738467 bytes
+2020/02/11-14:21:29.301 1494 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/02/11-14:21:29.301 1494 Delete type=2 #16
+2020/02/11-14:21:29.301 1494 Delete type=2 #19

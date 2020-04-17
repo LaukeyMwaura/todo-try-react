@@ -1,0 +1,875 @@
+[02/04/20, 09:27:49:134] info: ╔═════════════════════════════════════════════════════════════════════════════════╗
+║      Slack 4.2.0, linux 4.15.0-20-generic on x64 at 02/04/20, 09:27:49:133      ║
+╚═════════════════════════════════════════════════════════════════════════════════╝ 
+[02/04/20, 09:27:49:134] info: Configured logger via 
+{
+  "identifierOverride": "webapp-console",
+  "logLevel": "info",
+  "numberOfInstances": 2
+}
+[02/04/20, 09:27:49:135] info: Predefined values for process 
+{
+  "NODE_ENV": "production",
+  "platform": "linux",
+  "type": "browser",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.2.0",
+  "PACKAGE_MANIFEST.commit": "82852a0",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[02/04/20, 09:28:04:662] info: Initializing local storage instance at path: /home/victor/.config/Slack/local-settings.json 
+[02/04/20, 09:28:04:706] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/04/20, 09:28:04:707] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/04/20, 09:28:04:727] info: Read UUID from file successful {
+  "uuid": "e1ea0c05-eeba-5c03-832f-14d553919dd2"
+} 
+[02/04/20, 09:28:04:749] info: toggleAutoSpellcheck:: desktop interface is not available 
+[02/04/20, 09:28:04:749] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/04/20, 09:28:04:817] info: Store: UPSERT_WEB_CONTENTS {
+  "appId": "app",
+  "id": 1,
+  "state": "loaded"
+} 
+[02/04/20, 09:28:04:819] info: Store: MAIN_WINDOW_SHOWN  
+[02/04/20, 09:28:04:819] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "bounds": {
+      "height": 741,
+      "width": 988,
+      "x": 223,
+      "y": 27
+    },
+    "fullScreen": false,
+    "maximized": false
+  }
+} 
+[02/04/20, 09:28:04:824] info: Store: UPSERT_WEB_CONTENTS {
+  "appId": "app",
+  "id": 1,
+  "state": "empty-page"
+} 
+[02/04/20, 09:28:04:831] info: Store: UPSERT_WEB_CONTENTS {
+  "appId": "app",
+  "history": "[REDACTED]",
+  "id": 1,
+  "state": "page-will-navigate"
+} 
+[02/04/20, 09:28:04:852] info: create: creating new instance of cld3 {
+  "minBufferLength": 140,
+  "maxBufferLength": 1000
+} 
+[02/04/20, 09:28:04:852] info: cld3::loadModule: loading cld3 wasm binary {
+  "initOptions": {}
+} 
+[02/04/20, 09:28:04:853] info: cld3Loader::loadModule: constructed module object for runtime 
+[02/04/20, 09:28:04:901] info: cld3Loader::initializeRuntime: successfully initialized module 
+[02/04/20, 09:28:04:902] info: cld3Loader::loadModule: initialized wasm binary Runtime 
+[02/04/20, 09:28:04:902] info: cld3::cldLoader: cld3 wasm initialized with default values {
+  "unknownIdentifier": "und",
+  "minBytesDefault": 140,
+  "maxBytesDefault": 700,
+  "maxBytesInput": 10000,
+  "languageResultStructSize": 24
+} 
+[02/04/20, 09:28:05:246] info: Initializing local storage instance at path: /home/victor/.config/Slack/local-settings.json 
+[02/04/20, 09:28:05:289] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/04/20, 09:28:05:290] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/04/20, 09:28:05:311] info: Read UUID from file successful {
+  "uuid": "e1ea0c05-eeba-5c03-832f-14d553919dd2"
+} 
+[02/04/20, 09:28:05:405] info: toggleAutoSpellcheck:: desktop interface is not available 
+[02/04/20, 09:28:05:406] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/04/20, 09:28:05:571] info: Network status check {
+  "elapsed_time_ms": 357,
+  "navigator_online": true,
+  "api_test": "online"
+} 
+[02/04/20, 09:28:05:574] info: Store: SET_NETWORK_STATUS online 
+[02/04/20, 09:28:05:883] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "bounds": {
+      "height": 711,
+      "width": 988,
+      "x": 223,
+      "y": 57
+    },
+    "fullScreen": false,
+    "maximized": false
+  }
+} 
+[02/04/20, 09:28:07:003] info: Main window preload script finished {
+  "readyTime": 1597.070474
+} 
+[02/04/20, 09:28:07:082] info: create: creating new instance of cld3 {
+  "minBufferLength": 140,
+  "maxBufferLength": 1000
+} 
+[02/04/20, 09:28:07:082] info: cld3::loadModule: loading cld3 wasm binary {
+  "initOptions": {}
+} 
+[02/04/20, 09:28:07:082] info: cld3Loader::loadModule: constructed module object for runtime 
+[02/04/20, 09:28:07:119] info: cld3Loader::initializeRuntime: successfully initialized module 
+[02/04/20, 09:28:07:123] info: cld3Loader::loadModule: initialized wasm binary Runtime 
+[02/04/20, 09:28:07:124] info: cld3::cldLoader: cld3 wasm initialized with default values {
+  "unknownIdentifier": "und",
+  "minBytesDefault": 140,
+  "maxBytesDefault": 700,
+  "maxBytesInput": 10000,
+  "languageResultStructSize": 24
+} 
+[02/04/20, 09:28:07:256] info: Network status check {
+  "elapsed_time_ms": 250,
+  "navigator_online": true,
+  "api_test": "online"
+} 
+[02/04/20, 09:28:07:259] info: Store: SET_NETWORK_STATUS online 
+[02/04/20, 09:28:08:261] info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0 
+[02/04/20, 09:28:09:098] info: Got window.open with URL: /ssb/signin 
+[02/04/20, 09:28:09:099] error: Uncaught TypeError: Cannot read property 'canOpenURLInWindow' of undefined 
+[02/04/20, 09:28:10:118] info: Store: UPDATE_SETTINGS {
+  "userTheme": "light"
+} 
+[02/04/20, 09:28:10:118] info: Store: UPDATE_SETTINGS {
+  "systemThemeSyncEnabled": false
+} 
+[02/04/20, 09:28:10:171] warn: error getActiveModelOb found no ob 
+[02/04/20, 09:28:10:171] warn: TS.boot_data.channel_id: undefined 
+[02/04/20, 09:28:10:171] warn: TS.boot_data.im_id: undefined 
+[02/04/20, 09:28:10:172] warn: TS.boot_data.group_id: undefined 
+[02/04/20, 09:28:10:172] warn: error getActiveModelOb found no ob 
+[02/04/20, 09:28:10:172] warn: TS.boot_data.channel_id: undefined 
+[02/04/20, 09:28:10:172] warn: TS.boot_data.im_id: undefined 
+[02/04/20, 09:28:10:172] warn: TS.boot_data.group_id: undefined 
+[02/04/20, 09:28:10:203] info: [BOOT] booted! pri:0 version:1580767192 start_ms:1580797687214 (2988ms ago) 
+[02/04/20, 09:28:10:229] info: [DESKTOP-MIDDLEWARE] (T00000000) Forwarding redux payload to desktop ["theme","featureFlags","bootConfig","unreads","locale"] 
+[02/04/20, 09:28:10:247] info: Store: REDUX_UPDATE_FROM_WEBAPP (T00000000) Changed keys [theme,featureFlags,bootConfig,unreads,locale] 
+[02/04/20, 09:28:10:247] info: [DESKTOP-MIDDLEWARE] (T00000000) Forwarding redux payload to desktop ["version"] 
+[02/04/20, 09:28:10:251] warn: TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want. 
+[02/04/20, 09:28:10:252] info: [INFO] no TS.client on page:https://app.slack.com/ssb/first?redir=%2Fssb%2Fclient 
+[02/04/20, 09:28:10:257] info: Store: UPSERT_WEB_CONTENTS {
+  "appId": "app",
+  "id": 1,
+  "state": "loaded"
+} 
+[02/04/20, 09:28:10:257] info: Store: REDUX_UPDATE_FROM_WEBAPP (T00000000) Changed keys [version] 
+[02/04/20, 09:28:11:084] info: [INFO] running without a user 
+[02/04/20, 09:28:12:107] info: Got window.open with URL: /ssb/signin 
+[02/04/20, 09:28:12:138] warn: TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want. 
+[02/04/20, 09:28:12:139] info: [UNKNOWN-FETCH-MANAGER] (T00000000) requesting T00000000 (1) 
+[02/04/20, 09:28:12:142] warn: TRACES You tried to get a team-specific tracer but didn’t provide enough context and are getting the generic tracer instead which is likely not what you want. 
+[02/04/20, 09:28:12:148] info: [API-Q] (T00000000) 6c2403b0-1580797692.143 team.info called with reason: UnknownFetchManager 
+[02/04/20, 09:28:12:149] info: [API-Q] (T00000000) 6c2403b0-1580797692.143 team.info is ENQUEUED 
+[02/04/20, 09:28:12:151] info: [API-Q] (T00000000) 6c2403b0-1580797692.143 team.info is ACTIVE 
+[02/04/20, 09:28:13:934] info: [API-Q] (T00000000) 6c2403b0-1580797692.143 team.info is REJECTED: API not ok not_authed 
+[02/04/20, 09:28:13:935] info: [UNKNOWN-FETCH-MANAGER] (T00000000) received T00000000 (1) 
+[02/04/20, 09:28:13:936] warn: (T00000000) UnknownFetchManager requested 1 objects but received 0. Missing objects: T00000000 
+[02/04/20, 09:28:14:219] info: [FOCUS-EVENT] Window blurred 
+[02/04/20, 09:28:49:050] info: Store: UPDATE_SETTINGS {
+  "lastClogForProxyInfo": 1580797729046
+} 
+[02/04/20, 09:30:02:890] info: [FOCUS-EVENT] Window focused 
+[02/04/20, 09:30:06:563] info: Got window.open with URL: /ssb/signin 
+[02/04/20, 09:30:06:898] info: [FOCUS-EVENT] Window blurred 
+[02/04/20, 09:35:25:095] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 09:35:55:121] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 09:43:35:513] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 09:43:55:532] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 09:44:15:551] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 09:44:25:562] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 09:44:55:588] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 09:46:55:694] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 09:47:15:715] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 09:47:25:725] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 09:50:13:732] info: [INFO] Received offline event! Upserting that the client is offline. 
+[02/04/20, 09:50:13:899] error: Uncaught Error: getClientStoreInstance is only for use in the Sonic client 
+[02/04/20, 09:50:14:221] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 09:50:14:222] info: Network status check {
+  "elapsed_time_ms": 3,
+  "navigator_online": false,
+  "api_test": "offline"
+} 
+[02/04/20, 09:50:14:227] info: Store: SET_NETWORK_STATUS offline 
+[02/04/20, 09:50:20:211] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 09:50:20:212] info: Network status check {
+  "elapsed_time_ms": 2,
+  "navigator_online": true,
+  "api_test": "offline"
+} 
+[02/04/20, 09:51:17:879] info: [INFO] Received offline event! Upserting that the client is offline. 
+[02/04/20, 09:51:18:381] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 09:51:18:382] info: Network status check {
+  "elapsed_time_ms": 3,
+  "navigator_online": false,
+  "api_test": "offline"
+} 
+[02/04/20, 09:51:22:837] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 09:51:22:838] info: Network status check {
+  "elapsed_time_ms": 1,
+  "navigator_online": true,
+  "api_test": "offline"
+} 
+[02/04/20, 09:51:55:947] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 09:52:15:968] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 09:53:06:018] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 10:02:46:552] info: Store: SET_SYSTEM_IDLE idle_presence 
+[02/04/20, 10:03:36:723] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 10:06:16:865] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 10:07:16:918] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 10:21:47:648] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 10:21:57:654] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 10:22:57:718] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 10:23:07:725] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 10:30:28:156] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 10:31:28:218] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 10:31:58:253] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 10:32:38:298] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 10:36:48:548] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 10:37:38:597] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 10:58:49:750] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 10:58:59:763] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:00:49:881] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:01:09:889] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:05:00:095] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:05:20:120] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:11:20:483] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:11:40:508] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:12:20:555] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:12:40:585] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:17:10:848] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:17:20:855] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:21:41:159] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:22:01:450] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:36:32:375] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:36:42:427] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:37:52:484] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:38:32:528] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:41:32:702] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:41:52:716] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:43:12:805] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:44:02:860] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:45:12:949] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:45:32:975] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:47:43:111] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:47:53:116] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 11:48:53:183] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 11:49:13:241] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:00:04:816] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:00:14:411] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:02:04:522] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:02:14:531] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:02:54:582] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:03:34:624] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:03:54:647] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:04:14:670] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:05:04:731] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:06:04:831] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:06:24:856] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:06:44:883] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:07:24:928] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:07:44:954] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:20:55:850] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:21:05:854] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:23:35:995] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:23:46:009] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:26:56:316] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:27:36:282] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:39:57:897] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:40:17:497] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:40:47:534] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:41:07:562] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:41:27:796] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:41:57:620] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:44:47:849] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:46:39:161] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:48:29:315] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:48:39:327] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 12:49:09:405] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 12:49:19:418] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 13:00:00:111] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 13:01:20:201] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 13:03:14:396] info: Store: SET_SUSPEND_STATUS false 
+[02/04/20, 13:03:17:776] info: [INFO] sleep event! 
+[02/04/20, 13:03:19:439] info: [INFO] Received offline event! Upserting that the client is offline. 
+[02/04/20, 13:03:22:699] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 13:03:22:700] info: Network status check {
+  "elapsed_time_ms": 1066,
+  "navigator_online": false,
+  "api_test": "offline"
+} 
+[02/04/20, 13:03:24:364] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 13:47:53:723] info: Store: SET_SUSPEND_STATUS true 
+[02/04/20, 13:47:54:204] info: [INFO] wake event! version:1580767192 start_ms:1580797687214 
+[02/04/20, 13:47:54:205] info: Store: POWER_RESUMED  
+[02/04/20, 13:47:54:851] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 13:48:01:075] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 13:48:01:076] info: Network status check {
+  "elapsed_time_ms": 825,
+  "navigator_online": true,
+  "api_test": "offline"
+} 
+[02/04/20, 13:57:35:486] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 13:57:45:500] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 14:09:17:514] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 14:09:27:524] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 14:31:52:022] info: [INFO] Received offline event! Upserting that the client is offline. 
+[02/04/20, 14:31:53:263] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 14:31:53:264] info: Network status check {
+  "elapsed_time_ms": 445,
+  "navigator_online": false,
+  "api_test": "offline"
+} 
+[02/04/20, 14:32:04:129] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 14:32:04:130] info: Network status check {
+  "elapsed_time_ms": 1109,
+  "navigator_online": true,
+  "api_test": "offline"
+} 
+[02/04/20, 14:47:16:457] info: [INFO] Received offline event! Upserting that the client is offline. 
+[02/04/20, 14:47:17:142] info: Store: SET_SUSPEND_STATUS false 
+[02/04/20, 14:47:17:247] info: [INFO] sleep event! 
+[02/04/20, 14:47:17:497] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 14:47:17:498] info: Network status check {
+  "elapsed_time_ms": 1,
+  "navigator_online": false,
+  "api_test": "offline"
+} 
+[02/04/20, 14:47:39:770] info: Store: SET_SUSPEND_STATUS true 
+[02/04/20, 14:47:39:770] info: [INFO] wake event! version:1580767192 start_ms:1580797687214 
+[02/04/20, 14:47:39:794] info: Store: POWER_RESUMED  
+[02/04/20, 14:47:45:411] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 14:47:45:411] info: Network status check {
+  "elapsed_time_ms": 3,
+  "navigator_online": true,
+  "api_test": "offline"
+} 
+[02/04/20, 14:50:52:159] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 14:51:12:185] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 14:51:32:210] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 14:52:42:275] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 14:55:32:449] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 14:56:02:485] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 14:56:52:540] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 14:57:02:553] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 14:57:52:606] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 14:58:22:632] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 14:59:52:738] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 15:00:02:752] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 15:00:52:815] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 15:01:32:863] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 15:04:13:043] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 15:04:43:079] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 15:19:54:044] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 15:20:14:071] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 15:31:14:737] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 15:31:24:743] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 15:33:24:864] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 15:33:54:903] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 15:41:45:339] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 15:42:05:358] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 15:50:45:857] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 15:51:05:879] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 15:52:45:977] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 15:54:06:067] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:00:36:425] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:00:56:449] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:09:46:991] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:09:57:004] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:15:47:348] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:15:57:357] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:17:27:455] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:18:17:510] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:28:18:187] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:30:08:180] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:30:28:189] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:30:48:215] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:32:38:328] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:32:58:353] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:35:38:523] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:35:48:536] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:36:28:582] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:36:48:608] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:42:18:940] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:42:38:960] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:47:29:253] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:47:49:265] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:48:19:293] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:48:39:316] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:51:29:483] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:51:39:496] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:56:09:775] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:56:19:784] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 16:57:09:833] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 16:59:29:954] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 17:11:40:657] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 17:11:50:661] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 17:12:40:712] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 17:13:37:779] info: Store: SET_SUSPEND_STATUS false 
+[02/04/20, 17:13:38:739] info: [INFO] sleep event! 
+[02/04/20, 17:13:38:740] info: [INFO] Received offline event! Upserting that the client is offline. 
+[02/04/20, 17:13:39:359] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 17:13:39:359] info: Network status check {
+  "elapsed_time_ms": 115,
+  "navigator_online": false,
+  "api_test": "offline"
+} 
+[02/04/20, 17:47:17:500] info: Store: SET_SUSPEND_STATUS true 
+[02/04/20, 17:47:17:500] info: [INFO] wake event! version:1580767192 start_ms:1580797687214 
+[02/04/20, 17:47:17:501] info: Store: POWER_RESUMED  
+[02/04/20, 17:47:20:062] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 17:47:38:914] info: Network status check {
+  "elapsed_time_ms": 843,
+  "navigator_online": true,
+  "api_test": "online"
+} 
+[02/04/20, 17:47:38:915] info: Store: SET_NETWORK_STATUS online 
+[02/04/20, 17:48:10:108] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 17:48:50:154] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 17:49:10:179] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 17:49:20:183] info: [FOCUS-EVENT] Window focused 
+[02/04/20, 17:49:20:246] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 17:49:24:146] info: [FOCUS-EVENT] Window blurred 
+[02/04/20, 17:51:22:465] info: [FOCUS-EVENT] Window focused 
+[02/04/20, 17:51:23:466] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "bounds": {
+      "height": 711,
+      "width": 988,
+      "x": 223,
+      "y": 57
+    },
+    "fullScreen": false,
+    "maximized": false
+  }
+} 
+[02/04/20, 17:51:24:325] info: Got window.open with URL: /ssb/signin 
+[02/04/20, 17:51:25:471] info: [FOCUS-EVENT] Window blurred 
+[02/04/20, 17:53:39:242] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 17:53:44:934] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 17:55:05:133] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 17:55:25:156] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:00:26:759] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:01:16:810] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:03:17:039] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:05:07:159] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:05:47:207] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:06:07:227] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:06:21:213] info: [FOCUS-EVENT] Window focused 
+[02/04/20, 18:06:22:907] info: [FOCUS-EVENT] Window blurred 
+[02/04/20, 18:06:46:567] info: Store: SET_SUSPEND_STATUS false 
+[02/04/20, 18:06:50:050] info: [INFO] sleep event! 
+[02/04/20, 18:06:50:256] info: Store: DISPLAY_METRICS_CHANGED  
+[02/04/20, 18:06:50:258] info: [INFO] Received offline event! Upserting that the client is offline. 
+[02/04/20, 18:06:52:434] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 18:06:52:434] info: Network status check {
+  "elapsed_time_ms": 515,
+  "navigator_online": false,
+  "api_test": "offline"
+} 
+[02/04/20, 18:06:52:595] info: Store: SET_NETWORK_STATUS offline 
+[02/04/20, 18:09:23:967] info: Store: SET_SUSPEND_STATUS true 
+[02/04/20, 18:09:23:968] info: [INFO] wake event! version:1580767192 start_ms:1580797687214 
+[02/04/20, 18:09:23:969] info: Store: POWER_RESUMED  
+[02/04/20, 18:09:31:691] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 18:09:31:691] info: Network status check {
+  "elapsed_time_ms": 528,
+  "navigator_online": true,
+  "api_test": "offline"
+} 
+[02/04/20, 18:09:53:989] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:10:03:996] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:10:07:663] info: Store: DISPLAY_METRICS_CHANGED  
+[02/04/20, 18:10:34:024] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:10:54:048] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:16:44:448] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:16:54:461] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:19:14:624] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:20:14:732] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:20:34:756] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:21:39:272] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:22:29:310] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:22:59:348] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:24:39:440] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 18:25:09:469] info: Store: SET_SYSTEM_IDLE active 
+[02/04/20, 18:25:47:183] info: Store: SET_SUSPEND_STATUS false 
+[02/04/20, 18:25:49:413] info: [INFO] sleep event! 
+[02/04/20, 18:25:49:417] info: [INFO] Received offline event! Upserting that the client is offline. 
+[02/04/20, 18:25:49:622] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/04/20, 18:25:49:623] info: Network status check {
+  "elapsed_time_ms": 2,
+  "navigator_online": false,
+  "api_test": "offline"
+} 
+[02/04/20, 19:19:00:615] info: Store: SET_SUSPEND_STATUS true 
+[02/04/20, 19:19:00:624] info: [INFO] wake event! version:1580767192 start_ms:1580797687214 
+[02/04/20, 19:19:00:625] info: Store: POWER_RESUMED  
+[02/04/20, 19:19:50:674] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/04/20, 19:20:00:687] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 13:05:06:321] info: ╔═════════════════════════════════════════════════════════════════════════════════╗
+║      Slack 4.2.0, linux 4.15.0-20-generic on x64 at 02/06/20, 13:05:06:321      ║
+╚═════════════════════════════════════════════════════════════════════════════════╝ 
+[02/06/20, 13:05:06:322] info: Configured logger via 
+{
+  "identifierOverride": "webapp-console",
+  "logLevel": "info",
+  "numberOfInstances": 2
+}
+[02/06/20, 13:05:06:323] info: Predefined values for process 
+{
+  "NODE_ENV": "production",
+  "platform": "linux",
+  "type": "browser",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.2.0",
+  "PACKAGE_MANIFEST.commit": "82852a0",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[02/06/20, 13:05:07:546] info: Initializing local storage instance at path: /home/victor/.config/Slack/local-settings.json 
+[02/06/20, 13:05:07:605] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/06/20, 13:05:07:606] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/06/20, 13:05:07:632] info: Read UUID from file successful {
+  "uuid": "e1ea0c05-eeba-5c03-832f-14d553919dd2"
+} 
+[02/06/20, 13:05:07:776] info: toggleAutoSpellcheck:: desktop interface is not available 
+[02/06/20, 13:05:07:777] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/06/20, 13:05:07:848] info: Main window preload script finished {
+  "readyTime": 81.819891
+} 
+[02/06/20, 13:05:07:983] info: create: creating new instance of cld3 {
+  "minBufferLength": 140,
+  "maxBufferLength": 1000
+} 
+[02/06/20, 13:05:07:983] info: cld3::loadModule: loading cld3 wasm binary {
+  "initOptions": {}
+} 
+[02/06/20, 13:05:07:983] info: cld3Loader::loadModule: constructed module object for runtime 
+[02/06/20, 13:05:08:101] info: cld3Loader::initializeRuntime: successfully initialized module 
+[02/06/20, 13:05:08:132] info: Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://a.slack-edge.com/80588/fonts/lato-2-compressed/lato-black.woff2 
+[02/06/20, 13:05:08:134] info: Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://a.slack-edge.com/80588/fonts/lato-2-compressed/lato-regular.woff2 
+[02/06/20, 13:05:08:163] info: cld3Loader::loadModule: initialized wasm binary Runtime 
+[02/06/20, 13:05:08:163] info: cld3::cldLoader: cld3 wasm initialized with default values {
+  "unknownIdentifier": "und",
+  "minBytesDefault": 140,
+  "maxBytesDefault": 700,
+  "maxBytesInput": 10000,
+  "languageResultStructSize": 24
+} 
+[02/06/20, 13:05:08:183] info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0 
+[02/06/20, 13:05:08:636] info: Network status check {
+  "elapsed_time_ms": 250,
+  "navigator_online": true,
+  "api_test": "online"
+} 
+[02/06/20, 13:05:08:640] info: Store: SET_NETWORK_STATUS online 
+[02/06/20, 13:05:18:037] info: Store: UPDATE_SETTINGS {
+  "userTheme": "light"
+} 
+[02/06/20, 13:05:18:037] info: Store: UPDATE_SETTINGS {
+  "systemThemeSyncEnabled": false
+} 
+[02/06/20, 13:05:18:097] warn: error getActiveModelOb found no ob 
+[02/06/20, 13:05:18:098] warn: TS.boot_data.channel_id: undefined 
+[02/06/20, 13:05:18:098] warn: TS.boot_data.im_id: undefined 
+[02/06/20, 13:05:18:098] warn: TS.boot_data.group_id: undefined 
+[02/06/20, 13:05:18:098] warn: error getActiveModelOb found no ob 
+[02/06/20, 13:05:18:098] warn: TS.boot_data.channel_id: undefined 
+[02/06/20, 13:05:18:098] warn: TS.boot_data.im_id: undefined 
+[02/06/20, 13:05:18:099] warn: TS.boot_data.group_id: undefined 
+[02/06/20, 13:05:18:128] info: [BOOT] booted! pri:0 version:1580951674 start_ms:1580983508075 (10053ms ago) 
+[02/06/20, 13:05:18:152] info: [DESKTOP-MIDDLEWARE] (T00000000) Forwarding redux payload to desktop ["theme","featureFlags","bootConfig","unreads","locale"] 
+[02/06/20, 13:05:18:226] info: Store: REDUX_UPDATE_FROM_WEBAPP (T00000000) Changed keys [theme,featureFlags,bootConfig,unreads,locale] 
+[02/06/20, 13:05:18:226] info: [DESKTOP-MIDDLEWARE] (T00000000) Forwarding redux payload to desktop ["version"] 
+[02/06/20, 13:05:18:228] warn: TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want. 
+[02/06/20, 13:05:18:228] info: [INFO] no TS.client on page:https://app.slack.com/ssb/first?redir=%2Fssb%2Fclient 
+[02/06/20, 13:05:18:228] info: Store: UPSERT_WEB_CONTENTS {
+  "appId": "app",
+  "id": 1,
+  "state": "loaded"
+} 
+[02/06/20, 13:05:18:228] info: Store: MAIN_WINDOW_SHOWN  
+[02/06/20, 13:05:18:228] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "bounds": {
+      "height": 711,
+      "width": 988,
+      "x": 223,
+      "y": 57
+    },
+    "fullScreen": false,
+    "maximized": false
+  }
+} 
+[02/06/20, 13:05:18:230] info: Store: REDUX_UPDATE_FROM_WEBAPP (T00000000) Changed keys [version] 
+[02/06/20, 13:05:19:056] info: [INFO] running without a user 
+[02/06/20, 13:05:24:880] info: Got window.open with URL: /ssb/signin 
+[02/06/20, 13:05:24:897] warn: TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want. 
+[02/06/20, 13:05:24:897] info: [UNKNOWN-FETCH-MANAGER] (T00000000) requesting T00000000 (1) 
+[02/06/20, 13:05:24:899] warn: TRACES You tried to get a team-specific tracer but didn’t provide enough context and are getting the generic tracer instead which is likely not what you want. 
+[02/06/20, 13:05:24:902] info: [API-Q] (T00000000) cac9f77e-1580983524.899 team.info called with reason: UnknownFetchManager 
+[02/06/20, 13:05:24:903] info: [API-Q] (T00000000) cac9f77e-1580983524.899 team.info is ENQUEUED 
+[02/06/20, 13:05:24:904] info: [API-Q] (T00000000) cac9f77e-1580983524.899 team.info is ACTIVE 
+[02/06/20, 13:05:25:145] info: [API-Q] (T00000000) cac9f77e-1580983524.899 team.info is REJECTED: API not ok not_authed 
+[02/06/20, 13:05:25:155] info: [UNKNOWN-FETCH-MANAGER] (T00000000) received T00000000 (1) 
+[02/06/20, 13:05:25:155] warn: (T00000000) UnknownFetchManager requested 1 objects but received 0. Missing objects: T00000000 
+[02/06/20, 13:05:25:155] info: [FOCUS-EVENT] Window blurred 
+[02/06/20, 13:05:42:977] info: Store: SET_SUSPEND_STATUS false 
+[02/06/20, 13:05:42:978] info: [INFO] sleep event! 
+[02/06/20, 13:05:43:029] info: [INFO] Received offline event! Upserting that the client is offline. 
+[02/06/20, 13:05:43:155] error: Uncaught Error: getClientStoreInstance is only for use in the Sonic client 
+[02/06/20, 13:05:43:526] info: NetworkStatus: Network check failed {
+  "error": {}
+} 
+[02/06/20, 13:05:43:526] info: Network status check {
+  "elapsed_time_ms": 2,
+  "navigator_online": false,
+  "api_test": "offline"
+} 
+[02/06/20, 13:05:43:528] info: Store: SET_NETWORK_STATUS offline 
+[02/06/20, 13:49:01:635] info: Store: SET_SUSPEND_STATUS true 
+[02/06/20, 13:49:01:636] info: [INFO] wake event! version:1580951674 start_ms:1580983508075 
+[02/06/20, 13:49:01:640] info: Store: POWER_RESUMED  
+[02/06/20, 13:49:07:808] info: Network status check {
+  "elapsed_time_ms": 249,
+  "navigator_online": true,
+  "api_test": "online"
+} 
+[02/06/20, 13:49:07:811] info: Store: SET_NETWORK_STATUS online 
+[02/06/20, 13:49:37:013] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 13:51:17:070] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 13:53:17:135] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 13:53:47:152] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 13:54:07:166] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 13:54:17:174] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 13:55:07:205] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 13:55:17:213] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:02:27:421] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:03:07:444] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:11:17:686] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:11:27:691] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:15:27:814] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:15:37:821] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:17:57:893] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:18:17:906] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:21:17:994] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:21:48:008] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:28:18:184] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:28:28:190] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:31:48:280] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:31:58:285] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:37:58:448] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:41:48:558] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:42:08:568] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:44:28:636] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 14:53:58:879] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 14:54:48:903] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 15:13:49:348] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 15:14:09:357] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 15:14:29:368] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 15:15:09:385] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 15:16:19:416] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 15:17:09:438] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 15:36:59:840] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 15:37:59:862] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 15:42:49:958] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 15:43:29:973] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 15:44:29:995] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 15:44:39:999] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 15:46:10:028] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 15:46:20:033] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 15:52:50:140] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 15:53:10:147] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 15:59:10:384] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 16:01:40:505] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 16:02:50:560] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 16:03:30:592] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 16:04:10:634] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 16:06:10:746] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 16:11:11:009] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 16:11:21:012] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 16:24:41:742] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 16:24:51:751] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 16:25:41:791] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 16:25:51:802] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 16:26:31:841] info: Store: SET_SYSTEM_IDLE idle_taskbar 
+[02/06/20, 16:26:51:862] info: Store: SET_SYSTEM_IDLE active 
+[02/06/20, 16:30:05:066] info: [FOCUS-EVENT] Window focused 
+[02/06/20, 16:30:07:460] info: Store: QUIT_APP  
+[02/06/20, 16:30:07:500] info: [FOCUS-EVENT] Window blurred 
+[02/06/20, 16:30:07:500] info: Store: APP_CLEANED_UP  
+[02/06/20, 16:30:07:500] info: Store: DOWNLOADS_CLEANED_UP  
+[02/06/20, 16:30:07:595] info: [WINDOW-UNLOADING] (T00000000) workspace handling window unloading event 
+[02/09/20, 13:24:53:352] info: ╔═════════════════════════════════════════════════════════════════════════════════╗
+║      Slack 4.3.2, linux 4.15.0-76-generic on x64 at 02/09/20, 13:24:53:351      ║
+╚═════════════════════════════════════════════════════════════════════════════════╝ 
+[02/09/20, 13:24:53:352] info: Configured logger via 
+{
+  "identifierOverride": "webapp-console",
+  "logLevel": "info",
+  "numberOfInstances": 2
+}
+[02/09/20, 13:24:53:353] info: Predefined values for process 
+{
+  "NODE_ENV": "production",
+  "platform": "linux",
+  "type": "browser",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.3.2",
+  "PACKAGE_MANIFEST.commit": "bdb3575",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[02/09/20, 13:24:54:916] info: Initializing local storage instance at path: /home/victor/.config/Slack/local-settings.json 
+[02/09/20, 13:24:55:045] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/09/20, 13:24:55:045] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/09/20, 13:24:55:076] info: Read UUID from file successful {
+  "uuid": "e1ea0c05-eeba-5c03-832f-14d553919dd2"
+} 
+[02/09/20, 13:24:55:413] info: toggleAutoSpellcheck:: desktop interface is not available 
+[02/09/20, 13:24:55:414] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[02/09/20, 13:24:55:516] info: Main window preload script finished {
+  "readyTime": 102.39748
+} 
+[02/09/20, 13:24:55:662] info: create: creating new instance of cld3 {
+  "minBufferLength": 140,
+  "maxBufferLength": 1000
+} 
+[02/09/20, 13:24:55:663] info: cld3::loadModule: loading cld3 wasm binary {
+  "initOptions": {}
+} 
+[02/09/20, 13:24:55:664] info: cld3Loader::loadModule: constructed module object for runtime 
+[02/09/20, 13:24:55:755] info: cld3Loader::initializeRuntime: successfully initialized module 
+[02/09/20, 13:24:55:755] info: cld3Loader::loadModule: initialized wasm binary Runtime 
+[02/09/20, 13:24:55:756] info: cld3::cldLoader: cld3 wasm initialized with default values {
+  "unknownIdentifier": "und",
+  "minBytesDefault": 140,
+  "maxBytesDefault": 700,
+  "maxBytesInput": 10000,
+  "languageResultStructSize": 24
+} 
+[02/09/20, 13:24:56:840] info: Network status check {
+  "elapsed_time_ms": 1252,
+  "navigator_online": true,
+  "api_test": "online"
+} 
+[02/09/20, 13:24:56:842] info: Store: SET_NETWORK_STATUS online 
+[02/09/20, 13:25:01:747] info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0 
+[02/09/20, 13:25:21:108] warn: error getActiveModelOb found no ob 
+[02/09/20, 13:25:21:108] warn: TS.boot_data.channel_id: undefined 
+[02/09/20, 13:25:21:108] warn: TS.boot_data.im_id: undefined 
+[02/09/20, 13:25:21:109] warn: TS.boot_data.group_id: undefined 
+[02/09/20, 13:25:21:109] warn: error getActiveModelOb found no ob 
+[02/09/20, 13:25:21:109] warn: TS.boot_data.channel_id: undefined 
+[02/09/20, 13:25:21:109] warn: TS.boot_data.im_id: undefined 
+[02/09/20, 13:25:21:110] warn: TS.boot_data.group_id: undefined 
+[02/09/20, 13:25:21:135] info: [BOOT] booted! pri:0 version:1581234842 start_ms:1581243901684 (19450ms ago) 
+[02/09/20, 13:25:21:161] info: [DESKTOP-MIDDLEWARE] (T00000000) Forwarding redux payload to desktop ["theme","featureFlags","bootConfig","unreads","locale"] 
+[02/09/20, 13:25:21:240] info: Store: UPDATE_SETTINGS {
+  "userTheme": "light"
+} 
+[02/09/20, 13:25:21:241] info: [DESKTOP-MIDDLEWARE] (T00000000) Forwarding redux payload to desktop ["version"] 
+[02/09/20, 13:25:21:242] info: Store: UPDATE_SETTINGS {
+  "systemThemeSyncEnabled": false
+} 
+[02/09/20, 13:25:21:243] info: Store: REDUX_UPDATE_FROM_WEBAPP (T00000000) Changed keys [theme,featureFlags,bootConfig,unreads,locale] 
+[02/09/20, 13:25:21:244] warn: TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want. 
+[02/09/20, 13:25:21:245] info: [INFO] no TS.client on page:https://app.slack.com/ssb/first?redir=%2Fssb%2Fclient 
+[02/09/20, 13:25:21:245] info: Store: UPSERT_WEB_CONTENTS {
+  "appId": "app",
+  "id": 1,
+  "state": "loaded"
+} 
+[02/09/20, 13:25:21:245] info: Store: MAIN_WINDOW_SHOWN  
+[02/09/20, 13:25:21:246] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "bounds": {
+      "height": 711,
+      "width": 988,
+      "x": 223,
+      "y": 57
+    },
+    "fullScreen": false,
+    "maximized": false
+  }
+} 
+[02/09/20, 13:25:21:246] info: Store: CLEAR_NOTIFICATIONS  
+[02/09/20, 13:25:21:248] info: Store: REDUX_UPDATE_FROM_WEBAPP (T00000000) Changed keys [version] 
+[02/09/20, 13:25:22:528] info: [INFO] running without a user 
+[02/09/20, 13:25:23:657] info: Got window.open with URL: /ssb/signin 
+[02/09/20, 13:25:23:679] warn: TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want. 
+[02/09/20, 13:25:23:680] info: [UNKNOWN-FETCH-MANAGER] (T00000000) requesting T00000000 (1) 
+[02/09/20, 13:25:23:681] warn: TRACES You tried to get a team-specific tracer but didn’t provide enough context and are getting the generic tracer instead which is likely not what you want. 
+[02/09/20, 13:25:23:685] info: [API-Q] (T00000000) 24259307-1581243923.682 team.info called with reason: UnknownFetchManager 
+[02/09/20, 13:25:23:685] info: [API-Q] (T00000000) 24259307-1581243923.682 team.info is ENQUEUED 
+[02/09/20, 13:25:23:686] info: [API-Q] (T00000000) 24259307-1581243923.682 team.info is ACTIVE 
+[02/09/20, 13:25:23:943] info: [FOCUS-EVENT] Window blurred 
+[02/09/20, 13:25:23:945] info: [API-Q] (T00000000) 24259307-1581243923.682 team.info is REJECTED: API not ok not_authed 
+[02/09/20, 13:25:23:949] info: [UNKNOWN-FETCH-MANAGER] (T00000000) received T00000000 (1) 
+[02/09/20, 13:25:23:949] warn: (T00000000) UnknownFetchManager requested 1 objects but received 0. Missing objects: T00000000 
+[02/09/20, 13:25:28:272] info: [FOCUS-EVENT] Window focused 
+[02/09/20, 13:25:31:109] info: Store: QUIT_APP  
+[02/09/20, 13:25:31:113] info: [FOCUS-EVENT] Window blurred 
+[02/09/20, 13:25:31:118] info: Store: APP_CLEANED_UP  
+[02/09/20, 13:25:31:118] info: Store: DOWNLOADS_CLEANED_UP  
+[02/09/20, 13:25:31:153] info: [WINDOW-UNLOADING] (T00000000) workspace handling window unloading event 

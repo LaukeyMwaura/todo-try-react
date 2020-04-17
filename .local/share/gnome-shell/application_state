@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="4" last-seen="1581314313"/>
+    <application id="org.gnome.Cheese.desktop" open-window-count="0" score="9" last-seen="1581149131"/>
+    <application id="yelp.desktop" open-window-count="0" score="3" last-seen="1581410499"/>
+    <application id="atom.desktop" open-window-count="0" score="347" last-seen="1581408248"/>
+    <application id="firefox.desktop" open-window-count="0" score="420" last-seen="1581270628"/>
+    <application id="gnome-sudoku.desktop" open-window-count="0" score="35" last-seen="1581149058"/>
+    <application id="gnome-calculator_gnome-calculator.desktop" open-window-count="0" score="2" last-seen="1581320297"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="479" last-seen="1581437917"/>
+    <application id="update-manager.desktop" open-window-count="0" score="0" last-seen="1581387473"/>
+    <application id="slack.desktop" open-window-count="0" score="2" last-seen="1581243931"/>
+    <application id="eog.desktop" open-window-count="1" score="140" last-seen="1581439203"/>
+    <application id="code.desktop" open-window-count="1" score="13148" last-seen="1581439200"/>
+    <application id="org.gnome.DejaDup.desktop" open-window-count="0" score="0" last-seen="1580994868"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="16767" last-seen="1581438203"/>
+    <application id="org.remmina.Remmina.desktop" open-window-count="0" score="0" last-seen="1581410584"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="5" last-seen="1581410532"/>
+    <application id="rhythmbox.desktop" open-window-count="0" score="0" last-seen="1581383289"/>
+    <application id="gnome-mahjongg.desktop" open-window-count="0" score="0" last-seen="1581149144"/>
+    <application id="gnome-mines.desktop" open-window-count="0" score="7" last-seen="1581148807"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="7206" last-seen="1581436965"/>
+    <application id="evince.desktop" open-window-count="0" score="0" last-seen="1580894787"/>
+    <application id="sol.desktop" open-window-count="0" score="0" last-seen="1581410604"/>
+    <application id="org.gnome.Software.desktop" open-window-count="0" score="84" last-seen="1581325929"/>
+    <application id="libreoffice-writer.desktop" open-window-count="0" score="476" last-seen="1581335454"/>
+  </context>
+</application-state>

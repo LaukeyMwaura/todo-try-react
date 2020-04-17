@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///tmp/mozilla_victor0/google-chrome-stable_current_amd64.deb" added="2020-02-03T14:04:15Z" modified="2020-02-03T14:04:15Z" visited="2020-02-03T14:04:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-02-03T14:04:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/slack-desktop-4.2.0-amd64.deb" added="2020-02-03T14:29:05Z" modified="2020-02-03T14:29:05Z" visited="2020-02-03T14:29:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-02-03T14:29:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Tue%201" added="2020-02-04T05:57:27Z" modified="2020-02-04T05:57:27Z" visited="2020-02-04T05:57:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-04T05:57:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/Tue%201.odt" added="2020-02-04T05:57:28Z" modified="2020-02-10T05:26:48Z" visited="2020-02-04T05:57:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-05T05:39:23Z" count="44"/>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-05T05:58:03Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/my-first-webpage.html" added="2020-02-04T07:28:38Z" modified="2020-02-10T05:26:48Z" visited="2020-02-04T07:28:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="atom" exec="&apos;atom %u&apos;" modified="2020-02-04T07:28:38Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-05T15:53:26Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Q%20and%20A" added="2020-02-04T08:31:35Z" modified="2020-02-04T08:31:35Z" visited="2020-02-04T08:31:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-04T08:31:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/Q%20and%20A.odt" added="2020-02-04T08:31:36Z" modified="2020-02-10T05:27:19Z" visited="2020-02-04T08:31:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-04T08:31:36Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Pictures/Screenshot%20from%202020-02-04%2012-28-45.png" added="2020-02-04T09:28:46Z" modified="2020-02-04T09:28:46Z" visited="2020-02-04T09:28:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-04T09:28:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/cookie-recipe" added="2020-02-04T11:49:44Z" modified="2020-02-10T05:26:48Z" visited="2020-02-04T11:49:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-04T11:49:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/cookie-recipe-master.zip" added="2020-02-04T13:37:42Z" modified="2020-02-04T13:37:42Z" visited="2020-02-04T13:37:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2020-02-04T13:37:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/pics/ford.jpg" added="2020-02-04T13:45:25Z" modified="2020-02-10T05:26:48Z" visited="2020-02-04T13:45:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-04T13:45:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/pics/html attributes.pdf" added="2020-02-04T14:10:04Z" modified="2020-02-10T05:26:48Z" visited="2020-02-04T14:10:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-04T14:10:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/valentines" added="2020-02-05T06:03:42Z" modified="2020-02-10T05:26:48Z" visited="2020-02-05T06:03:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-05T06:03:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/cookie-recipe/valentines.html" added="2020-02-05T06:05:52Z" modified="2020-02-10T05:26:48Z" visited="2020-02-05T06:05:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-05T06:05:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/css.pdf" added="2020-02-05T09:22:26Z" modified="2020-02-05T09:22:26Z" visited="2020-02-05T09:22:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-05T09:22:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/Downloads" added="2020-02-05T09:26:24Z" modified="2020-02-05T09:26:32Z" visited="2020-02-05T09:26:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2020-02-05T09:26:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/WED" added="2020-02-05T10:52:26Z" modified="2020-02-05T10:52:26Z" visited="2020-02-05T10:52:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-05T10:52:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/WED.odt" added="2020-02-05T10:52:27Z" modified="2020-02-10T05:26:48Z" visited="2020-02-05T10:52:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-05T12:41:56Z" count="5"/>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T06:23:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Pictures/Screenshot%20from%202020-02-05%2014-24-37.png" added="2020-02-05T11:24:37Z" modified="2020-02-05T11:24:37Z" visited="2020-02-05T11:24:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-05T11:24:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/resort-website.html/malindi island.jpg" added="2020-02-05T12:58:37Z" modified="2020-02-10T05:27:19Z" visited="2020-02-05T12:58:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-05T12:58:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/resort-website.html/Documents" added="2020-02-05T13:44:08Z" modified="2020-02-10T05:27:19Z" visited="2020-02-05T13:44:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-05T13:44:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/resort-website.html/malindi.jpg" added="2020-02-05T13:46:17Z" modified="2020-02-10T05:27:19Z" visited="2020-02-05T13:46:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-05T13:46:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/cookie-recipe/README.md" added="2020-02-05T19:23:12Z" modified="2020-02-10T05:26:48Z" visited="2020-02-05T19:23:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-06T19:57:20Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/cookie-recipe/LICENSE" added="2020-02-05T19:23:42Z" modified="2020-02-10T05:26:48Z" visited="2020-02-05T19:23:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-05T19:23:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/cookie-recipe/hello-world/assets/styles/style.css" added="2020-02-05T19:26:32Z" modified="2020-02-10T05:26:48Z" visited="2020-02-05T19:26:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-05T19:26:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/cookie-recipe/cookie-recipe.html" added="2020-02-05T19:55:19Z" modified="2020-02-10T05:26:48Z" visited="2020-02-05T19:55:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-06T20:19:33Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/branching-test-project/css/styles.css" added="2020-02-05T19:56:51Z" modified="2020-02-10T05:27:02Z" visited="2020-02-05T19:56:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-05T19:56:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/resort-website.html/Accomodation.css" added="2020-02-05T19:59:56Z" modified="2020-02-10T05:27:19Z" visited="2020-02-05T19:59:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-05T19:59:56Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/resort-website.html/Accomodation.html" added="2020-02-05T19:59:56Z" modified="2020-02-10T05:27:19Z" visited="2020-02-05T19:59:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-05T19:59:56Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/resort-website.html/Malindi-Island.css" added="2020-02-05T20:05:46Z" modified="2020-02-10T05:27:19Z" visited="2020-02-05T20:05:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-06T19:22:37Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/elephant.jpeg" added="2020-02-05T20:59:59Z" modified="2020-02-10T05:26:48Z" visited="2020-02-05T20:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-05T20:59:59Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-06T07:02:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/Travel" added="2020-02-06T06:57:12Z" modified="2020-02-10T05:27:19Z" visited="2020-02-06T06:57:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-06T06:57:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/news-article.html/news.png" added="2020-02-06T08:40:33Z" modified="2020-02-10T05:27:19Z" visited="2020-02-06T08:40:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-06T08:40:33Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/news-article.html/news1.png" added="2020-02-06T08:40:51Z" modified="2020-02-10T05:27:19Z" visited="2020-02-06T08:40:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-06T08:40:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/index.html/index.css" added="2020-02-06T09:28:32Z" modified="2020-02-10T05:27:02Z" visited="2020-02-06T09:28:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-06T09:28:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/index.html/index.html" added="2020-02-06T09:29:06Z" modified="2020-02-10T05:27:02Z" visited="2020-02-06T09:29:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;/usr/share/code/code --no-sandbox --unity-launch %F&apos;" modified="2020-02-06T09:29:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/mangoes-thus/index.css" added="2020-02-06T09:30:32Z" modified="2020-02-10T05:27:02Z" visited="2020-02-06T09:30:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;/usr/share/code/code --no-sandbox --unity-launch %F&apos;" modified="2020-02-06T09:30:32Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-06T11:56:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/mangoes-thus/index.html" added="2020-02-06T09:30:32Z" modified="2020-02-10T05:27:02Z" visited="2020-02-06T09:30:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;/usr/share/code/code --no-sandbox --unity-launch %F&apos;" modified="2020-02-06T09:30:32Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-06T11:56:31Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/columns/index.css" added="2020-02-06T09:46:53Z" modified="2020-02-10T05:27:02Z" visited="2020-02-06T09:46:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;/usr/share/code/code --no-sandbox --unity-launch %F&apos;" modified="2020-02-06T09:46:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/columns/index.html" added="2020-02-06T09:46:53Z" modified="2020-02-10T05:27:02Z" visited="2020-02-06T09:46:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;/usr/share/code/code --no-sandbox --unity-launch %F&apos;" modified="2020-02-06T09:46:53Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-06T11:49:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/resort-website.html/Contact.html" added="2020-02-06T11:25:50Z" modified="2020-02-10T05:27:19Z" visited="2020-02-06T11:25:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-06T11:25:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/news-article.html/fake-news-article.css" added="2020-02-06T11:53:07Z" modified="2020-02-10T05:27:19Z" visited="2020-02-06T11:53:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-06T11:55:04Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/band-website/band.jpeg" added="2020-02-06T11:59:07Z" modified="2020-02-10T05:26:48Z" visited="2020-02-06T11:59:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-06T11:59:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/thus" added="2020-02-06T12:57:44Z" modified="2020-02-06T12:57:44Z" visited="2020-02-06T12:57:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-06T12:57:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/thus.odt" added="2020-02-06T12:57:44Z" modified="2020-02-10T05:27:19Z" visited="2020-02-06T12:57:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-06T13:39:36Z" count="8"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/Victor-Mburu.css" added="2020-02-06T20:55:47Z" modified="2020-02-10T05:27:02Z" visited="2020-02-06T20:55:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-06T20:55:47Z" count="1"/>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-09T18:14:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/WhatsApp Image 2020-02-06 at 22.45.09.jpeg" added="2020-02-07T05:09:26Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T05:09:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T05:09:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/my-first-website/my-favorite-things.html" added="2020-02-07T05:16:05Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T05:16:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-07T05:16:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/HTML-Cheat-Sheet.zip" added="2020-02-07T07:16:37Z" modified="2020-02-07T07:17:32Z" visited="2020-02-07T07:16:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2020-02-07T07:17:32Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads" added="2020-02-07T07:17:46Z" modified="2020-02-10T05:37:26Z" visited="2020-02-07T07:17:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Archive Manager" exec="&apos;file-roller %u&apos;" modified="2020-02-10T05:37:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/HTML-Cheat-Sheet-page-9.jpg" added="2020-02-07T07:18:04Z" modified="2020-02-07T07:18:04Z" visited="2020-02-07T07:18:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-07T07:18:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/HTML-Cheat-Sheet-page-1.jpg" added="2020-02-07T07:18:17Z" modified="2020-02-07T07:18:17Z" visited="2020-02-07T07:18:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-07T07:18:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/HTML-Cheat-Sheet-page-2.jpg" added="2020-02-07T07:18:18Z" modified="2020-02-07T07:18:18Z" visited="2020-02-07T07:18:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-07T07:18:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/HTML-Cheat-Sheet-page-3.jpg" added="2020-02-07T07:18:19Z" modified="2020-02-07T07:18:19Z" visited="2020-02-07T07:18:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-07T07:18:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/pattern.jpg" added="2020-02-07T07:37:01Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T07:37:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T07:37:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/gradient.jpg" added="2020-02-07T11:04:18Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T11:04:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T11:04:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/texture.jpeg" added="2020-02-07T11:14:21Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T11:14:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T11:14:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/red.html" added="2020-02-07T11:15:51Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T11:15:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T11:15:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/red.jpeg" added="2020-02-07T11:18:06Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T11:18:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T11:18:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/vjs.png" added="2020-02-07T11:19:25Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T11:19:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T11:19:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/vjs.jpg" added="2020-02-07T12:43:35Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T12:43:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T12:43:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/gradient.jpeg" added="2020-02-07T12:44:04Z" modified="2020-02-10T05:27:02Z" visited="2020-02-07T12:44:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-07T12:44:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/README.md" added="2020-02-08T07:50:44Z" modified="2020-02-10T05:27:02Z" visited="2020-02-08T07:50:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-09T17:52:39Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/cv.html/cv.css" added="2020-02-09T11:51:21Z" modified="2020-02-10T05:27:02Z" visited="2020-02-09T11:51:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-09T11:51:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Monday" added="2020-02-10T05:30:10Z" modified="2020-02-10T05:30:10Z" visited="2020-02-10T05:30:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-10T05:30:10Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Monday.odt" added="2020-02-10T05:30:12Z" modified="2020-02-10T11:50:52Z" visited="2020-02-10T05:30:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 6.0" exec="&apos;soffice %u&apos;" modified="2020-02-10T11:50:52Z" count="26"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/bootstrap-4.4.1-dist.zip" added="2020-02-10T05:37:20Z" modified="2020-02-10T05:37:20Z" visited="2020-02-10T05:37:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2020-02-10T05:37:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/My-Portfolio/index.html" added="2020-02-10T06:49:39Z" modified="2020-02-10T07:31:15Z" visited="2020-02-10T06:49:39Z">
+    <title>index.html</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-10T07:31:15Z" count="3"/>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-10T06:59:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/band-website/index.html" added="2020-02-10T07:13:49Z" modified="2020-02-10T07:13:49Z" visited="2020-02-10T07:13:49Z">
+    <title>index.html</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code file:///home/victor/Documents/Week1MPFT26/band-website/band-website.html&apos;" modified="2020-02-10T07:13:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/media-query-practice.html/index.html" added="2020-02-10T07:14:54Z" modified="2020-02-10T07:14:54Z" visited="2020-02-10T07:14:54Z">
+    <title>index.html</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code file:///home/victor/Documents/Week1MPFT26/media-query-practice.html/media-query-site.html&apos;" modified="2020-02-10T07:14:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/index.html" added="2020-02-10T07:15:45Z" modified="2020-02-10T07:15:45Z" visited="2020-02-10T07:15:46Z">
+    <title>index.html</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code file:///home/victor/Documents/Week1MPFT26/moringa-school-projects/Valentines.html&apos;" modified="2020-02-10T07:15:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/news-article.html/index.html" added="2020-02-10T07:16:26Z" modified="2020-02-10T07:16:26Z" visited="2020-02-10T07:16:26Z">
+    <title>index.html</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code file:///home/victor/Documents/Week1MPFT26/news-article.html/fake-news-article.html&apos;" modified="2020-02-10T07:16:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/resort-website.html/index.html" added="2020-02-10T07:16:42Z" modified="2020-02-10T07:16:42Z" visited="2020-02-10T07:16:42Z">
+    <title>index.html</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code file:///home/victor/Documents/Week1MPFT26/resort-website.html/Malindi-Private-Island.html&apos;" modified="2020-02-10T07:16:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/resume/index.html" added="2020-02-10T07:17:07Z" modified="2020-02-10T07:17:07Z" visited="2020-02-10T07:17:08Z">
+    <title>index.html</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code file:///home/victor/Documents/Week1MPFT26/resume/resume.html&apos;" modified="2020-02-10T07:17:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/vjjs.png" added="2020-02-10T08:51:03Z" modified="2020-02-10T08:51:39Z" visited="2020-02-10T08:51:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-10T08:51:39Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/bootstrap-practice/index.html" added="2020-02-10T09:35:21Z" modified="2020-02-11T01:45:12Z" visited="2020-02-10T09:35:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-11T01:45:12Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Downloads/Fine%20Foods%20Catering.html" added="2020-02-10T09:45:23Z" modified="2020-02-10T09:45:23Z" visited="2020-02-10T09:45:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-10T09:45:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/stand.jpg" added="2020-02-10T14:30:52Z" modified="2020-02-10T14:30:52Z" visited="2020-02-10T14:30:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-10T14:30:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/clothes.jpg" added="2020-02-10T14:31:44Z" modified="2020-02-11T16:03:48Z" visited="2020-02-10T14:31:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-10T14:31:44Z" count="1"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-11T16:03:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/logo.png" added="2020-02-10T14:34:36Z" modified="2020-02-10T14:34:36Z" visited="2020-02-10T14:34:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-10T14:34:36Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/shop.png" added="2020-02-10T14:35:34Z" modified="2020-02-10T14:35:34Z" visited="2020-02-10T14:35:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-10T14:35:34Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/index.html" added="2020-02-11T01:08:55Z" modified="2020-02-11T01:31:18Z" visited="2020-02-11T01:08:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-11T01:23:47Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;/usr/share/code/code --no-sandbox --unity-launch %F&apos;" modified="2020-02-11T01:24:01Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-11T01:31:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/bootstrap-practice-projects/Assignment_1/assets/backgrounds/mouse_click.png" added="2020-02-11T01:09:13Z" modified="2020-02-11T01:59:50Z" visited="2020-02-11T01:09:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-11T01:09:13Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/bootstrap-practice-projects/Assignment_1/page_guide.jpg" added="2020-02-11T01:09:32Z" modified="2020-02-11T16:04:04Z" visited="2020-02-11T01:09:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-11T16:04:04Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/bootstrap-practice-projects/Assignment_1/assets" added="2020-02-11T01:30:01Z" modified="2020-02-11T01:30:01Z" visited="2020-02-11T01:30:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-11T01:30:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/bootstrap-practice-projects/Assignment_1/assets/backgrounds/index.html" added="2020-02-11T01:33:45Z" modified="2020-02-11T16:05:07Z" visited="2020-02-11T01:33:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-11T01:36:54Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;/usr/share/code/code --no-sandbox --unity-launch %F&apos;" modified="2020-02-11T01:37:07Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-11T16:05:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week1MPFT26/Travel-Agency/index.html" added="2020-02-11T01:34:39Z" modified="2020-02-11T01:34:39Z" visited="2020-02-11T01:34:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-02-11T01:34:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/bootstrap-practice-projects/Assignment_1/assets/backgrounds/logo.png" added="2020-02-11T01:39:13Z" modified="2020-02-11T01:50:23Z" visited="2020-02-11T01:39:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-11T01:39:13Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/bootstrap-practice-projects/Assignment_1/assets/backgrounds/shop.png" added="2020-02-11T01:39:17Z" modified="2020-02-11T01:50:23Z" visited="2020-02-11T01:39:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2020-02-11T01:39:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/bootstrap-practice-projects/Assignment_1/assets/logo/style.css" added="2020-02-11T03:01:23Z" modified="2020-02-11T03:01:23Z" visited="2020-02-11T03:01:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/css"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-11T03:01:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Pictures/Screenshot%20from%202020-02-11%2006-17-35.png" added="2020-02-11T03:17:35Z" modified="2020-02-11T03:17:35Z" visited="2020-02-11T03:17:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="gsd-media-keys" exec="&apos;gsd-media-keys %u&apos;" modified="2020-02-11T03:17:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Desktop/-home-victor-Documents-Week2MPFT26-Mon-yolomy-bootstrap-practice-projects-Assignment_1-assets-backgrounds-.txt" added="2020-02-11T06:52:46Z" modified="2020-02-11T06:52:46Z" visited="2020-02-11T06:52:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2020-02-11T06:52:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/bootstrap-practice-projects/Assignment_1/assets/backgrounds/tick.png" added="2020-02-11T12:12:49Z" modified="2020-02-11T12:12:49Z" visited="2020-02-11T12:12:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-11T12:12:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/victor/Documents/Week2MPFT26/Mon/yolomy/bootstrap-practice-projects/Assignment_1/assets/backgrounds/unticked.png" added="2020-02-11T12:13:09Z" modified="2020-02-11T12:13:09Z" visited="2020-02-11T12:13:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2020-02-11T12:13:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

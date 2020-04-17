@@ -1,0 +1,65 @@
+{
+  "Version": "18.04",
+  "OEM": {
+    "Vendor": "LENOVO",
+    "Product": "81H6"
+  },
+  "BIOS": {
+    "Vendor": "LENOVO",
+    "Version": "8QCN16WW(V1.04)"
+  },
+  "CPU": [
+    {
+      "Vendor": "GenuineIntel",
+      "Family": "6",
+      "Model": "142",
+      "Stepping": "10"
+    }
+  ],
+  "Arch": "amd64",
+  "GPU": [
+    {
+      "Vendor": "8086",
+      "Model": "5917"
+    }
+  ],
+  "RAM": 8,
+  "Partitions": [
+    960.4,
+    30.7
+  ],
+  "Screens": [
+    {
+      "Resolution": "1366x768",
+      "Frequency": "60.00"
+    }
+  ],
+  "Autologin": false,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Timezone": "Africa/Nairobi",
+  "Install": {
+    "Media": "Ubuntu 18.04 LTS \"Bionic Beaver\" - Release amd64 (20180426)",
+    "Type": "GTK",
+    "PartitionMethod": "use_device",
+    "DownloadUpdates": true,
+    "Language": "en",
+    "Minimal": false,
+    "RestrictedAddons": false,
+    "Stages": {
+      "0": "language",
+      "8": "console_setup",
+      "13": "prepare",
+      "28": "partman",
+      "38": "start_install",
+      "43": "timezone",
+      "49": "usersetup",
+      "83": "user_done",
+      "1101": "done"
+    }
+  }
+}
