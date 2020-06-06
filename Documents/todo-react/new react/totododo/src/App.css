@@ -1,0 +1,355 @@
+@media (min-width: 1281px) {
+    body {
+        background: url("../src/img/back.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: local;
+    }
+    .App {
+        background: url("../src/img/dark.jpeg");
+        min-height: 500px;
+        width: 400px;
+        margin: 40px auto;
+        background-size: contain;
+        background-position: top;
+        background: cover;
+        display: flex;
+    }
+    #to-do-form input {
+        background-color: rgba(27, 112, 137, 1);
+        border: 0;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        margin: 20px;
+        padding: 0 20px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    #to-do-form input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #to-do-form input:focus {
+        outline: none;
+    }
+    #to-do-form button {
+        height: 50px;
+        width: 80px;
+        border-radius: 5px;
+        border: 0;
+        background-color: rgba(202, 156, 24, 1);
+        cursor: pointer;
+    }
+    #to-do-form button:focus {
+        outline: none;
+    }
+    h2 {
+        color: greenyellow;
+        text-indent: 5px;
+        text-align: center;
+        padding-top: 20px;
+        margin: auto;
+        text-decoration: underline;
+    }
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        background: url("../src/img/back.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .App {
+        background: url("../src/img/dark.jpeg");
+        min-height: 500px;
+        width: 400px;
+        margin: 40px auto;
+        background-size: contain;
+        background-position: top;
+        background: cover;
+        display: flex;
+    }
+    #to-do-form input {
+        background-color: rgba(27, 112, 137, 1);
+        border: 0;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        margin: 20px;
+        padding: 0 20px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    #to-do-form input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #to-do-form input:focus {
+        outline: none;
+    }
+    #to-do-form button {
+        height: 50px;
+        width: 80px;
+        border-radius: 5px;
+        border: 0;
+        background-color: rgba(202, 156, 24, 1);
+        cursor: pointer;
+    }
+    #to-do-form button:focus {
+        outline: none;
+    }
+    h2 {
+        color: greenyellow;
+        text-indent: 5px;
+        text-align: center;
+        padding-top: 20px;
+        margin: auto;
+        text-decoration: underline;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background: url("../src/img/back.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .App {
+        background: url("../src/img/dark.jpeg");
+        min-height: 500px;
+        width: 400px;
+        margin: 40px auto;
+        background-size: contain;
+        background-position: top;
+        background: cover;
+        display: flex;
+    }
+    #to-do-form input {
+        background-color: rgba(27, 112, 137, 1);
+        border: 0;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        margin: 20px;
+        padding: 0 20px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    #to-do-form input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #to-do-form input:focus {
+        outline: none;
+    }
+    #to-do-form button {
+        height: 50px;
+        width: 80px;
+        border-radius: 5px;
+        border: 0;
+        background-color: rgba(202, 156, 24, 1);
+        cursor: pointer;
+    }
+    #to-do-form button:focus {
+        outline: none;
+    }
+    h2 {
+        color: greenyellow;
+        text-indent: 5px;
+        text-align: center;
+        padding-top: 20px;
+        margin: auto;
+        text-decoration: underline;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        background: url("../src/img/back.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .App {
+        background: url("../src/img/dark.jpeg");
+        min-height: 500px;
+        width: 400px;
+        margin: 40px auto;
+        background-size: contain;
+        background-position: top;
+        background: cover;
+        display: flex;
+    }
+    #to-do-form input {
+        background-color: rgba(27, 112, 137, 1);
+        border: 0;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        margin: 20px;
+        padding: 0 20px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    #to-do-form input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #to-do-form input:focus {
+        outline: none;
+    }
+    #to-do-form button {
+        height: 50px;
+        width: 80px;
+        border-radius: 5px;
+        border: 0;
+        background-color: rgba(202, 156, 24, 1);
+        cursor: pointer;
+    }
+    #to-do-form button:focus {
+        outline: none;
+    }
+    h2 {
+        color: greenyellow;
+        text-indent: 5px;
+        text-align: center;
+        padding-top: 20px;
+        margin: auto;
+        text-decoration: underline;
+    }
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background: url("../src/img/back.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .App {
+        background: url("../src/img/dark.jpeg");
+        min-height: 500px;
+        width: 300px;
+        margin: 40px auto;
+        background-size: contain;
+        background-position: top;
+        background: cover;
+        display: flex;
+    }
+    #to-do-form input {
+        background-color: rgba(27, 112, 137, 1);
+        border: 0;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        margin: 20px;
+        padding: 0 20px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    #to-do-form input::placeholder {
+        color: beige;
+    }
+    #to-do-form input:focus {
+        outline: none;
+    }
+    #to-do-form button {
+        height: 50px;
+        width: 80px;
+        border-radius: 5px;
+        border: 0;
+        margin-left: 10px;
+        background-color: rgba(202, 156, 24, 1);
+        cursor: pointer;
+    }
+    #to-do-form button:focus {
+        outline: none;
+    }
+    h2 {
+        color: greenyellow;
+        text-indent: 5px;
+        text-align: center;
+        padding-top: 20px;
+        margin: auto;
+        text-decoration: underline;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        background: url("../src/img/back.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .App {
+        background: url("../src/img/dark.jpeg");
+        min-height: 500px;
+        width: 300px;
+        margin: 40px auto;
+        background-size: contain;
+        background-position: top;
+        background: cover;
+        display: flex;
+    }
+    #to-do-form input {
+        background-color: rgba(27, 112, 137, 1);
+        border: 0;
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        margin: 20px;
+        padding: 0 20px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    #to-do-form input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #to-do-form input:focus {
+        outline: none;
+    }
+    #to-do-form button {
+        height: 50px;
+        width: 80px;
+        border-radius: 5px;
+        border: 0;
+        background-color: rgba(202, 156, 24, 1);
+        cursor: pointer;
+    }
+    #to-do-form button:focus {
+        outline: none;
+    }
+    h2 {
+        color: greenyellow;
+        text-indent: 5px;
+        text-align: center;
+        padding-top: 20px;
+        margin: auto;
+        text-decoration: underline;
+    }
+}
